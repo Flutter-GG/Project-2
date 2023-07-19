@@ -1,54 +1,67 @@
-**Assignment: Flutter App Development - Global Data Management**
+# Project #1 - Shopping List App
 
-**Objective:**
-This assignment is designed to showcase your proficiency in Flutter app development, with a specific focus on understanding Flutter's architecture, project structure, widgets, global data management, and data manipulation concepts.
+## Congratulations!
 
-**Requirements:**
+Congratulations on reaching this phase of the course! Over the next few days, you will be working on your second project that will allow you to further apply your knowledge and skills to build another real-world application. This exam project will serve as a demonstration of your proficiency in Global Data Management, focusing on understanding Flutter's architecture, project structure, widgets, global data management, and data manipulation concepts.
+
+## Description
+
 Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping list. Global data management should be used to efficiently store and manage the shopping list items.
 
-**Tasks:**
+## Rules & Guidelines
 
-1. **Flutter's Architecture and Structure**
-   - Provide a concise explanation of Flutter's architecture, emphasizing its fundamental components like widgets and the rendering engine.
-   - Describe the typical structure of a Flutter project, outlining the main directories and essential files that compose it.
+1. **Individual Work:** Each student is expected to work individually on their exam. Collaboration is not allowed, and each student should submit their unique work.
+2. **Version Control (Git):**
+   - Create a Fork from the exam’s GitHub repository.
+   - Create a new branch with your name, i.e., Nawaf-Alshawan.
+   - Commit frequently with descriptive messages to show your progress.
+   - Finally, create a Pull Request to the exam’s original repository containing your solution.
+3. **Academic Integrity:** Do not copy or reuse code from previous modules or external sources. The exam is a showcase of your learning progress.
+4. **Learning References:** You may refer to course materials and code examples as learning references, but implement your solutions independently.
+5. **Instructor Support:** The instructor will be available for general questions and guidance throughout the exam.
 
-2. **Creating a Flutter Project**
-   - Set up a new Flutter project named "ShoppingListApp" with the appropriate configuration.
-   - Customize the initial layout of the app to include a welcoming message and an icon.
+## Schedule & Deadlines
 
-3. **Widgets Implementation**
-   - Design the user interface of the app using appropriate widgets to display the shopping list and input fields for adding new items.
+- **Exam Start Date:** 9/8/2023 - 3:00 PM
+- **Exam Submission Deadline:** 13/8/2023 – 9:59 AM
 
-4. **Global Data Management**
-   - Implement a robust global data management mechanism using either the Provider or Bloc pattern to ensure consistent handling of the shopping list items throughout the app.
+## Minimum Requirements
 
-5. **Models and Data Manipulation**
-   - Develop a model class named "ShoppingItem" to represent a shopping item entity with properties such as name, quantity, and status (purchased or not).
-   - Implement necessary functions to add new items, update item status, and remove items from the global data.
+Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping list. Global data management should be used to efficiently store and manage the shopping list items. Please note the following:
 
-6. **Retrieve Data, Update Data, and Remove Data**
-   - Display the shopping list from the global data in a ListView widget on the home screen.
-   - Implement functionality to update the status of an item (mark as purchased) and ensure that the changes are accurately reflected in the shopping list.
-   - Allow users to remove an item from the list by performing a long press on the respective item.
+- **Correct Structure:** Ensure that the application is built with the appropriate structure. Follow Flutter's best practices for organizing code and project files.
+- **Clean Code:** Write code that is clear, well-organized, and scalable. Use meaningful variable and function names and follow standard coding conventions to improve code readability.
+- **Applying Concepts:** Make proper use of programming concepts and techniques. Implement efficient algorithms and follow Flutter's design patterns to create a robust and functional shopping list app.
+- **Global Variable Management:** Implement global variable management techniques to efficiently store and manage the shopping list items. Create a global List variable that holds the shopping list items, and use this variable to maintain the state of the items throughout the app.
+- **Data Representation:** Treat shopping list items as objects using a model. Create a model class to define the structure of a shopping list item, including attributes like name, quantity, etc.
+- **User Interactions:** Users should be able to perform the following actions:
+  - Add: Add new items to their shopping list along with relevant details like name, quantity, etc.
+  - View: Display the list of items in the shopping list with their details.
+  - Update: Allow users to modify the details of any item in the shopping list.
+  - Remove: Enable users to delete items from the shopping list.
 
-7. **GitHub Submission**
-   - Create a public GitHub repository for your "ShoppingListApp" and consistently commit your code.
-   - Ensure that the repository is accessible and available for review by the submission deadline.
+## Ideas for Extra Credit
 
-**Submission Guidelines:**
-- You have a total of 3 days to complete the assignment, starting from the date of receipt.
-- Regularly commit and push your code to the GitHub repository before the submission deadline.
-- Include a README.md file in the repository, providing clear instructions on how to build and run the app.
-- Share the link to your GitHub repository as your final submission.
+1. **User Authentication:** Implement a user registration and login system to allow multiple users to have their own personalized shopping lists.
+2. **Categories and Sorting:** Add support for categorizing shopping list items. Users can assign items to different categories such as groceries, household items, or personal care. Implement sorting options based on categories, alphabetical order, or user-defined priorities!
+3. **Coupons and Deals:** Integrate with coupon and deal APIs to provide users with relevant discounts and offers for the items on their shopping list. Users can save money by taking advantage of available deals.
 
-**Note:** While developing the app, prioritize demonstrating your understanding of Flutter's architecture, global data management, and data manipulation concepts. If time permits, feel free to enhance the user interface and add extra features to showcase your creativity. Good luck with your assignment!
+## Delivery Requirements
 
-**Evaluation Criteria:**
-- Completion: The project will be evaluated based on how well it fulfills the specified requirements.
-- Quality: Your code will be assessed for its overall quality, including coding style, organization, and ease of maintenance.
-- Use of Programming Concepts: The effective utilization of Flutter widgets, data handling techniques, Models, and other relevant concepts will be taken into account.
+- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
+- **Readme File:**
+  - Create a README.md file in the root directory of your GitHub repository.
+  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
+    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
+    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
+    - **Features:** List all the features and functionalities of the app. Mention the core capabilities of the app, such as adding items to the shopping list, updating items, deleting items, etc.
+    - **Technologies Used:** Mention the technologies and libraries utilized in the development of the app. This could include mentioning Flutter, specific plugins used, or any other relevant technologies.
+    - **Code Explanation:** Optionally, provide explanations or documentation for the key parts of the code if necessary. This could be particularly helpful for complex algorithms or unique implementations.
 
-**Timeframe and Delivery:**
-You are expected to complete the project within 3 days. The final version should be delivered through GitHub, providing an accessible and efficient method for reviewing and evaluating your work.
+## Resources
 
-In conclusion, the "ShoppingListApp" will serve as a testament to your expertise in Flutter app development, as well as your mastery of global data management and data manipulation concepts.
+- [Dart Tutorials](https://dart.dev/tutorials)
+- [Flutter Documentation](https://docs.flutter.dev/)
+- [Flutter Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/flutter-tutorial/)
+
+Good luck with your exam project! If you have any general questions or need guidance, don't hesitate to reach out to the instructor. Happy coding!
