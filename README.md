@@ -1,12 +1,12 @@
-# Project #1 - Shopping List App
+# Project #2 - Shopping List App
 
 ## Congratulations!
 
-Congratulations on reaching this phase of the course! Over the next few days, you will be working on your second project that will allow you to further apply your knowledge and skills to build another real-world application. This exam project will serve as a demonstration of your proficiency in Global Data Management, focusing on understanding Flutter's architecture, project structure, widgets, global data management, and data manipulation concepts.
+Congratulations on reaching this phase of the course! Over the next few days, you will be working on the second project that will allow you to further apply your knowledge and skills to build another real-world application. This exam project will serve as a demonstration of your proficiency in Global Data Management, focusing on understanding Flutter's architecture, project structure, widgets, global data management, and data manipulation concepts.
 
 ## Description
 
-Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping list. Global data management should be used to efficiently store and manage the shopping list items.
+Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping lists. Global data management should be used to efficiently store and manage the shopping list items.
 
 ## Rules & Guidelines
 
@@ -27,7 +27,7 @@ Your task is to create a Flutter app that demonstrates global data management fo
 
 ## Minimum Requirements
 
-Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping list. Global data management should be used to efficiently store and manage the shopping list items. Please note the following:
+Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping lists. Global data management should be used to efficiently store and manage the shopping list items. Please note the following:
 
 - **Correct Structure:** Ensure that the application is built with the appropriate structure. Follow Flutter's best practices for organizing code and project files.
 - **Clean Code:** Write code that is clear, well-organized, and scalable. Use meaningful variable and function names and follow standard coding conventions to improve code readability.
