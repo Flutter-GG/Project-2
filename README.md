@@ -22,8 +22,8 @@ Your task is to create a Flutter app that demonstrates global data management fo
 
 ## Schedule & Deadlines
 
-- **Exam Start Date:** 9/8/2023 - 3:00 PM
-- **Exam Submission Deadline:** 13/8/2023 – 9:59 AM
+- **Exam Start Date:** 17/8/2023 - 3:00 PM
+- **Exam Submission Deadline:** 20/8/2023 – 11:59 PM
 
 ## Minimum Requirements
 
