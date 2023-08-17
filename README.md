@@ -39,6 +39,7 @@ Your task is to create a Flutter app that demonstrates global data management fo
   - View: Display the list of items in the shopping list with their details.
   - Update: Allow users to modify the details of any item in the shopping list.
   - Remove: Enable users to delete items from the shopping list.
+- **Utilizing Packages:** It is required that you use at least eight packages from *pub.dev*.
 
 ## Ideas for Extra Credit
 
