@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../main.dart';
 import '../model/plants_model.dart';
-import '../widgets/back_card.dart';
+import '../widgets/card_widgets/flip_card.dart';
 // import '../widgets/card_widgets/item_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -19,10 +19,9 @@ class _HomePageState extends State<HomePage> {
       scrollDirection: Axis.horizontal,
       itemCount: listOfPlants.length,
       itemBuilder: ((context, index) {
-        return
-            // ItemCard(
-            BackCrd(
-          plants: listOfPlants[index],
+        return CardFlip(
+          index: index,
+          plants: widget.plants,
         );
       }),
     );

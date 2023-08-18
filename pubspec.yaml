@@ -9,8 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  motion: ^1.4.0
   shimmer: ^3.0.0
+  flip_card: ^0.7.0
 
 dev_dependencies:
   flutter_test:
