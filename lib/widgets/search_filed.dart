@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
 
-class SearchField extends StatelessWidget {
-  SearchField({
+
+final TextEditingController searchFiledController = TextEditingController();
+
+class SearchField extends StatefulWidget {
+  const SearchField({
     super.key,
   });
 
-  final TextEditingController searchFiled = TextEditingController();
+  @override
+  State<SearchField> createState() => _SearchFieldState();
+}
+
+class _SearchFieldState extends State<SearchField> {
+
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: MediaQuery.of(context).size.width - 30,
       child: TextField(
-        controller: searchFiled,
+        onSubmitted: (value) {
+          searchFiledController.text = value;
+          setState(() {});
+        },
+        controller: searchFiledController,
         decoration: InputDecoration(
           suffixIcon: Padding(
             padding: const EdgeInsets.only(right: 8),

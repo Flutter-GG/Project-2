@@ -4,6 +4,7 @@ import 'package:ghars/screens/main_scaffold.dart';
 import 'model/plants_model.dart';
 
 List listOfPlants = [];
+List searchResult = [];
 List listOfCartItem = [];
 
 void main() {
