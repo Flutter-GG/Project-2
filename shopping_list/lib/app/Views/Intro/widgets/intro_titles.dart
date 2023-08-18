@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/utils/shared/custom_text.dart';
 
+import '../../../utils/constants/strings.dart';
 import '../../../utils/shared/spacing.dart';
 
 class IntroTitle extends StatelessWidget {
@@ -15,12 +16,12 @@ class IntroTitle extends StatelessWidget {
           children: [
             const Align(
               alignment: Alignment.topLeft,
-              child: LargeTitle(text: 'List Your \nGrocery'),
+              child: LargeTitle(text: introTitlePart1),
             ),
             ResponsiveSpacing.height(context, small),
             const Align(
               alignment: Alignment.topRight,
-              child: LargeTitle(text: 'Go for \nShopping'),
+              child: LargeTitle(text: introTitlePart2),
             ),
           ],
         ),

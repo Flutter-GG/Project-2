@@ -22,9 +22,12 @@ class IntroButtons extends StatelessWidget {
               destinationRoute: SignUpView(),
             ),
             ResponsiveSpacing.height(context, small),
-            const CustomIntroButton(
-              buttonText: 'Login',
-              destinationRoute: LogInView(),
+            const Padding(
+              padding: EdgeInsets.only(left: 32.0),
+              child: CustomIntroButton(
+                buttonText: 'Login',
+                destinationRoute: LogInView(),
+              ),
             ),
           ],
         ),
