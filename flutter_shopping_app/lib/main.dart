@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shopping_app/components/custom_bottom_nav_bar.dart';
+import 'package:flutter_shopping_app/screens/items_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -11,9 +13,8 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
+        body: ItemsScreen(),
+        bottomNavigationBar: CustomBottomNavBar(),
       ),
     );
   }
