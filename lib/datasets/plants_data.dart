@@ -1,15 +1,14 @@
 List<Map<String, dynamic>> plantData = [
   {
-    'name': 'Mother-in-Law Tongue Plant ',
-    'type': 'indoor',
+    'name': 'Lemon Tree',
+    'type': 'outdoor',
     'imgUrl':
-        'https://i.pinimg.com/originals/1a/98/25/1a9825728e10b019c3a55145d0d2c513.png',
+        'https://www.siteneutral.org/wp-content/uploads/revslider/rt-19-sample/lemon-tree.png',
     'about':
-        'How to care for Mother-in-Law Tongue plant. Known as Sansevieria or Snake Plant, this is a great plant for a medium to high light location and Mother-in-Law Tongue plant will do well with minimal care and attention. While Mother-in-Law Tongue is an easy care house plant, there really are no such things as indestructible or impossible to kill indoor plants! If that is what you want, you should buy an artificial indoor house plant!',
+        'She likes lots of sun, so put her in the brightest spot available. She likes slightly moist soil, so water her if the top two inches of soil are dry. She\'ll be thirstier in summer than winter. You can encourage her to grow more fruit by feeding her with citrus food once per month in spring and summer.',
     'quantity': 10,
-    'price': 120,
-    'moreInfo':
-        'https://www.plantandflowerinfo.com/indoor-house-plants/plant-care-mother-in-law-tongue',
+    'price': 500,
+    'moreInfo': 'https://www.patchplants.com/gb/en/plants/lemon-tree-389/',
   },
   {
     'name': 'Pothos Marble Queen Plant',
@@ -22,18 +21,6 @@ List<Map<String, dynamic>> plantData = [
     'price': 200,
     'moreInfo':
         'https://www.plantandflowerinfo.com/indoor-house-plants/plant-care-pothos-marble-queen',
-  },
-  {
-    'name': 'Money Tree House Plant',
-    'type': 'indoor',
-    'imgUrl':
-        'https://www.cambridgebee.com/cdn/shop/products/DFD61B08-1729-4301-86F0-0CD5860EAFF7_600x.png?v=1660238494',
-    'about':
-        'How to care for your Pachira plant, also called Money Tree house plant. The Money Tree is a recent newcomer to the interior landscape industry in the U.S. I believe the Money Tree plant, the common name for the Pachira, first started being used widely in the interior landscape industry just a few years ago. Since then, the Money Tree has become quite popular and many people bring their own Money Tree plants to the office to adorn their desks and cubicles.',
-    'quantity': 10,
-    'price': 190,
-    'moreInfo':
-        'https://www.plantandflowerinfo.com/how-to-care-for-pachira-money-tree-house-plant',
   },
   {
     'name': 'ZZ Plant House',
@@ -94,15 +81,16 @@ List<Map<String, dynamic>> plantData = [
         'https://www.patchplants.com/gb/en/plants/chamaerops-humilis-69/',
   },
   {
-    'name': 'Lemon Tree',
-    'type': 'outdoor',
+    'name': 'Money Tree House Plant',
+    'type': 'indoor',
     'imgUrl':
-        'https://www.siteneutral.org/wp-content/uploads/revslider/rt-19-sample/lemon-tree.png',
+        'https://www.cambridgebee.com/cdn/shop/products/DFD61B08-1729-4301-86F0-0CD5860EAFF7_600x.png?v=1660238494',
     'about':
-        'She likes lots of sun, so put her in the brightest spot available. She likes slightly moist soil, so water her if the top two inches of soil are dry. She\'ll be thirstier in summer than winter. You can encourage her to grow more fruit by feeding her with citrus food once per month in spring and summer.',
+        'How to care for your Pachira plant, also called Money Tree house plant. The Money Tree is a recent newcomer to the interior landscape industry in the U.S. I believe the Money Tree plant, the common name for the Pachira, first started being used widely in the interior landscape industry just a few years ago. Since then, the Money Tree has become quite popular and many people bring their own Money Tree plants to the office to adorn their desks and cubicles.',
     'quantity': 10,
-    'price': 500,
-    'moreInfo': 'https://www.patchplants.com/gb/en/plants/lemon-tree-389/',
+    'price': 190,
+    'moreInfo':
+        'https://www.plantandflowerinfo.com/how-to-care-for-pachira-money-tree-house-plant',
   },
   {
     'name': 'FARGESIA BAMBOO',
@@ -114,6 +102,18 @@ List<Map<String, dynamic>> plantData = [
     'quantity': 10,
     'price': 345,
     'moreInfo': 'https://www.patchplants.com/gb/en/plants/fargesia-bamboo-138/',
+  },
+  {
+    'name': 'Mother-in-Law Tongue Plant ',
+    'type': 'indoor',
+    'imgUrl':
+        'https://i.pinimg.com/originals/1a/98/25/1a9825728e10b019c3a55145d0d2c513.png',
+    'about':
+        'How to care for Mother-in-Law Tongue plant. Known as Sansevieria or Snake Plant, this is a great plant for a medium to high light location and Mother-in-Law Tongue plant will do well with minimal care and attention. While Mother-in-Law Tongue is an easy care house plant, there really are no such things as indestructible or impossible to kill indoor plants! If that is what you want, you should buy an artificial indoor house plant!',
+    'quantity': 10,
+    'price': 120,
+    'moreInfo':
+        'https://www.plantandflowerinfo.com/indoor-house-plants/plant-care-mother-in-law-tongue',
   },
   {
     'name': 'SWEET ORANGE TREE',

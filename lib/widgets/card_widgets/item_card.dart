@@ -57,9 +57,12 @@ class ItemCard extends StatelessWidget {
               plants.imgUrl!,
               width: MediaQuery.of(context).size.width - 180,
               height: MediaQuery.of(context).size.height - 550,
-              errorBuilder: (context, error, stackTrace) => const Icon(
-                Icons.error,
-                size: 90,
+              errorBuilder: (context, error, stackTrace) => const Padding(
+                padding: EdgeInsets.only(right: 60.0, top: 50),
+                child: Icon(
+                  Icons.error_outline,
+                  size: 90,
+                ),
               ),
             ),
           ),
@@ -76,13 +79,16 @@ class ItemCard extends StatelessWidget {
                     maxLines: 2,
                     style: const TextStyle(
                       fontSize: 30,
-                      fontWeight: FontWeight.bold,
+                      // fontWeight: FontWeight.bold,
+                      fontFamily: 'Lobster',
                     ),
                   ),
                   Text(
                     "${plants.type!} plant",
                     style: const TextStyle(
                       fontSize: 20,
+                      // fontFamily: 'AmaticSC',
+                      // fontWeight: FontWeight.bold,
                     ),
                   ),
                   GSpaces.gV16,

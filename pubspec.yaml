@@ -19,3 +19,11 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  fonts:
+    - family: AmaticSC
+      fonts:
+        - asset: asset/fonts/AmaticSC-Regular.ttf
+
+    - family: Lobster
+      fonts:
+        - asset: asset/fonts/Lobster-Regular.ttf
