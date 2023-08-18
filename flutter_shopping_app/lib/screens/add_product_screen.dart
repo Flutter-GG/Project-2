@@ -131,7 +131,7 @@ class _AddItemScreenState extends State<AddItemScreen> {
       final num stockValue = num.tryParse(stock) ?? 0;
       final List<String> imagesList = images.split(',');
 
-      ProductsModel newPost = ProductsModel(
+      ProductsModel newProduct = ProductsModel(
         id: products.length + 1,
         title: title,
         brand: brand,
@@ -146,9 +146,9 @@ class _AddItemScreenState extends State<AddItemScreen> {
       );
 
       setState(() {
-        products.add(newPost);
+        products.add(newProduct);
       });
     }
-    Navigator.pop(context, "addedPost");
+    Navigator.pop(context, "addedProduct");
   }
 }
