@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/main.dart';
 import '../../constants/colors.dart';
 import '../../constants/spaces.dart';
+import '../../model/plants_model.dart';
+import '../../screens/cart_page.dart';
 
-class CartItemCard extends StatelessWidget {
+class CartItemCard extends StatefulWidget {
   const CartItemCard({
     super.key,
+    required this.plants,
   });
+  final Plants plants;
 
+  @override
+  State<CartItemCard> createState() => _CartItemCardState();
+}
+
+class _CartItemCardState extends State<CartItemCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -19,7 +29,7 @@ class CartItemCard extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(10)),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey,
+            color: Color.fromARGB(157, 209, 206, 206),
             spreadRadius: 1,
             blurRadius: 5,
           ),
@@ -28,33 +38,42 @@ class CartItemCard extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const Text(
-                "Sweet Orang Tree", //Related to cart list
-                maxLines: 2,
-                style: TextStyle(
-                  fontFamily: 'Lobster',
-                  fontSize: 30,
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  widget.plants.name!, //Related to cart list
+                  maxLines: 1,
+                  overflow: TextOverflow.visible,
+                  style: const TextStyle(
+                    fontFamily: 'Lobster',
+                    fontSize: 30,
+                  ),
                 ),
-              ),
-              GSpaces.gV16,
-              Row(
-                children: [
-                  const Text("2 X 500"), //Related to counter
-                  GSpaces.gH16,
-                  const Text("Total: 1000"), // Realted to counter
-                ],
-              ),
-            ],
+                GSpaces.gV16,
+                Row(
+                  children: [
+                    Text("2 X ${widget.plants.price}"), //Related to counter
+                    GSpaces.gH16,
+                    const Text("Total: 1000"), // Realted to counter
+                  ],
+                ),
+              ],
+            ),
           ),
           // GSpaces.gH24,
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  cartItemList.remove(widget.plants);
+                  setState(() {});
+                  context
+                      .findAncestorStateOfType<CartPageState>()
+                      ?.setState(() {});
+                },
                 icon: const Icon(
                   Icons.delete,
                   color: Colors.red,
@@ -62,8 +81,7 @@ class CartItemCard extends StatelessWidget {
               ),
               Row(
                 children: [
-                  IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.remove)),
+                  IconButton(onPressed: () {}, icon: const Icon(Icons.remove)),
                   const Text(
                     "2", //Number related to counter
                     style: TextStyle(fontSize: 20),

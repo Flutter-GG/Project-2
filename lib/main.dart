@@ -5,7 +5,7 @@ import 'model/plants_model.dart';
 
 List listOfPlants = [];
 List searchResult = [];
-List listOfCartItem = [];
+List cartItemList = [];
 
 
 void main() {

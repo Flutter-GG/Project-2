@@ -9,9 +9,8 @@ import '../widgets/search_filed.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {
-  HomePage({super.key, this.plants});
+  const HomePage({super.key, this.plants});
   final Plants? plants;
-  List displayedList = [];
 
   @override
   State<HomePage> createState() => _HomePageState();

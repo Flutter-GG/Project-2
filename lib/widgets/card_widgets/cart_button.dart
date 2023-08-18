@@ -27,8 +27,8 @@ class _CartButtonState extends State<CartButton> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        if (!listOfCartItem.contains(listOfPlants.indexOf(widget.plants))) {
-          listOfCartItem.add(widget.plants);
+        if (!cartItemList.contains(widget.plants)) {
+          cartItemList.add(widget.plants);
         }
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           backgroundColor: GColors.white,
@@ -43,6 +43,7 @@ class _CartButtonState extends State<CartButton> {
             ),
           ),
         ));
+        setState(() {});
       },
       child: Container(
         margin: EdgeInsets.only(left: widget.leftMarg),

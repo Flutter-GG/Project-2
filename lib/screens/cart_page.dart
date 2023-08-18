@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
+import '../main.dart';
+import '../model/plants_model.dart';
 import '../widgets/card_widgets/cart_card.dart';
 
 class CartPage extends StatefulWidget {
-  const CartPage({super.key});
+  const CartPage({super.key, this.plants});
+
+  final Plants? plants;
 
   @override
-  State<CartPage> createState() => _CartPageState();
+  State<CartPage> createState() => CartPageState();
 }
 
-class _CartPageState extends State<CartPage> {
+class CartPageState extends State<CartPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: CartItemCard(),
+      child: ListView.builder(
+        itemCount: cartItemList.length,
+        itemBuilder: ((context, index) {
+          //Return the Fliped card
+          return CartItemCard(
+            plants: cartItemList[index],
+          );
+        }),
+      ),
     );
   }
 }
