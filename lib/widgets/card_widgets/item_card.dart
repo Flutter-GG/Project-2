@@ -91,7 +91,9 @@ class ItemCard extends StatelessWidget {
                   GSpaces.gV16,
                   const NumberOfItem(),
                   GSpaces.gV8,
-                  const CartButton()
+                  CartButton(
+                    plants: plants,
+                  )
                 ],
               ),
             ),

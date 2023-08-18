@@ -21,22 +21,6 @@ class _BackCrdState extends State<BackCrd> {
       child: Stack(
         children: [
           Positioned(
-            left: 45,
-            bottom: 115,
-            child: Shimmer.fromColors(
-              baseColor: GColors.darkGreen,
-              highlightColor: GColors.mint,
-              period: const Duration(milliseconds: 5000),
-              child: Text(
-                "${widget.plants.price} SR",
-                style: const TextStyle(
-                    color: GColors.black,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 17),
-              ),
-            ),
-          ),
-          Positioned(
             child: Container(
               margin: const EdgeInsets.only(right: 25, left: 20),
               padding: const EdgeInsets.only(
@@ -96,12 +80,29 @@ class _BackCrdState extends State<BackCrd> {
               ),
             ),
           ),
-          const Positioned(
+          Positioned(
             bottom: 20,
             left: 30,
             child: Column(
               children: [
-                NumberOfItem(
+                Shimmer.fromColors(
+                  baseColor: GColors.black,
+                  highlightColor: GColors.lightMint,
+                  child: Padding(
+                    padding: const EdgeInsets.only(
+                      right: 20.0,
+                    ),
+                    child: Text(
+                      "${widget.plants.price} SR",
+                      style: const TextStyle(
+                        color: GColors.black,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
+                      ),
+                    ),
+                  ),
+                ),
+                const NumberOfItem(
                   buttonSize: 15,
                   numberSize: 20,
                 ),
@@ -109,6 +110,7 @@ class _BackCrdState extends State<BackCrd> {
                   buttonSize: 50,
                   leftMarg: 0,
                   cartIconColor: GColors.darkGreen,
+                  plants: widget.plants,
                 ),
               ],
             ),
@@ -118,17 +120,3 @@ class _BackCrdState extends State<BackCrd> {
     );
   }
 }
-
-
-
-/**
- * Price
-  
-
-
-  * Buttons
-                  GSpaces.gV16,
-                  const NumberOfItem(),
-                  GSpaces.gV8,
-                  const CartButton()
- */

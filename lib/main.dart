@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:ghars/datasets/plants_data.dart';
-import 'package:ghars/screens/home_page.dart';
-import 'constants/colors.dart';
+import 'package:ghars/screens/main_scaffold.dart';
 import 'model/plants_model.dart';
 
 List listOfPlants = [];
+List listOfCartItem = [];
 
 void main() {
   for (var element in plantData) {
@@ -21,10 +21,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-        backgroundColor: GColors.white,
-        body: HomePage(),
-      ),
+      home: MainScaffold(),
     );
   }
 }
