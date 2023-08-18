@@ -78,17 +78,14 @@ class ItemCard extends StatelessWidget {
                     plants.name!,
                     maxLines: 2,
                     style: const TextStyle(
-                      fontSize: 30,
-                      // fontWeight: FontWeight.bold,
+                      fontSize: 25,
                       fontFamily: 'Lobster',
                     ),
                   ),
                   Text(
                     "${plants.type!} plant",
                     style: const TextStyle(
-                      fontSize: 20,
-                      // fontFamily: 'AmaticSC',
-                      // fontWeight: FontWeight.bold,
+                      fontSize: 17,
                     ),
                   ),
                   GSpaces.gV16,

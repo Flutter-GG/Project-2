@@ -6,8 +6,11 @@ int counter = 1;
 class NumberOfItem extends StatefulWidget {
   const NumberOfItem({
     super.key,
+    this.buttonSize = 20,
+    this.numberSize = 22,
   });
-
+  final double buttonSize;
+  final double numberSize;
   @override
   State<NumberOfItem> createState() => _NumberOfItemState();
 }
@@ -22,22 +25,22 @@ class _NumberOfItemState extends State<NumberOfItem> {
               counter != 1 ? counter-- : null;
               setState(() {});
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.remove,
-              size: 20,
+              size: widget.buttonSize,
             )),
         Text(
           "$counter",
-          style: const TextStyle(fontSize: 22),
+          style: TextStyle(fontSize: widget.numberSize),
         ), // Number will be here
         IconButton(
           onPressed: () {
             counter++;
             setState(() {});
           },
-          icon: const Icon(
+          icon: Icon(
             Icons.add,
-            size: 20,
+            size: widget.buttonSize,
           ),
         ),
       ],

@@ -5,7 +5,13 @@ import 'number_of_item_row.dart';
 class CartButton extends StatefulWidget {
   const CartButton({
     super.key,
+    this.buttonSize = 60,
+    this.leftMarg = 25,  this.cartIconColor = GColors.green,
   });
+
+  final double buttonSize;
+  final double leftMarg;
+  final Color cartIconColor;
 
   @override
   State<CartButton> createState() => _CartButtonState();
@@ -21,12 +27,12 @@ class _CartButtonState extends State<CartButton> {
         ));
       },
       child: Container(
-        margin: const EdgeInsets.only(left: 25),
+        margin: EdgeInsets.only(left: widget.leftMarg),
         padding: const EdgeInsets.all(15),
-        height: 60,
-        width: 60,
+        height: widget.buttonSize,
+        width: widget.buttonSize,
         decoration: BoxDecoration(
-            color: GColors.green, borderRadius: BorderRadius.circular(30)),
+            color: widget.cartIconColor, borderRadius: BorderRadius.circular(30)),
         child: Image.network(
           "https://cdn-icons-png.flaticon.com/128/833/833314.png",
           color: GColors.white,
