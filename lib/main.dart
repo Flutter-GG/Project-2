@@ -7,6 +7,7 @@ List listOfPlants = [];
 List searchResult = [];
 List listOfCartItem = [];
 
+
 void main() {
   for (var element in plantData) {
     listOfPlants.add(Plants.fromJson(element));

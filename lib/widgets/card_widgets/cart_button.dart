@@ -29,7 +29,6 @@ class _CartButtonState extends State<CartButton> {
       onTap: () {
         if (!listOfCartItem.contains(listOfPlants.indexOf(widget.plants))) {
           listOfCartItem.add(widget.plants);
-          print(listOfCartItem);
         }
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(
           backgroundColor: GColors.white,
