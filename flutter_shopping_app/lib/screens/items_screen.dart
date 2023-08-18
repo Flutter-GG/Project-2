@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_shopping_app/components/custom_app_bar.dart';
 import 'package:flutter_shopping_app/components/custom_products.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
@@ -20,8 +21,11 @@ class _ItemsScreenState extends State<ItemsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return CustomProductsInformation(
-      products: products,
+    return Scaffold(
+      appBar: const CustomAppBar(text: 'Home'),
+      body: CustomProductsInformation(
+        products: products,
+      ),
     );
   }
 

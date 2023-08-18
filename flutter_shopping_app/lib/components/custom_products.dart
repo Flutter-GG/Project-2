@@ -47,11 +47,18 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
     );
   }
 
-  void _addItems(ProductsModel item) {}
+  void _addItems(ProductsModel item) {
+    cart.add(item);
+    setState(
+      () {},
+    );
+  }
+
   void _deleteItems(ProductsModel item) {
-    setState(() {
-      products.remove(item);
-    });
+    products.remove(item);
+    setState(
+      () {},
+    );
   }
 
   void _goToSingleItem(BuildContext context, ProductsModel item) {
