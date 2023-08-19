@@ -37,6 +37,13 @@
             {
               "client_id": "595175608313-1fhjs3ejpud3gjb7c6gedrr87akhrr5m.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "595175608313-fjnju5i1jbjtn445bpakcolis24d661j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shoppingList.RunnerTests"
+              }
             }
           ]
         }
