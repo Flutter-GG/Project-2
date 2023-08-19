@@ -25,6 +25,7 @@ class LoginSheetState extends State<LoginSheet> {
       child: ElevatedButton(
         onPressed: () {
           showBottomSheet(
+              enableDrag: true,
               context: context,
               builder: (BuildContext context) {
                 return Container(

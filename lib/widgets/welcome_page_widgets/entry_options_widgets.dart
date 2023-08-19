@@ -14,7 +14,7 @@ class EntryOptions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        LoginSheet(),
+        const LoginSheet(),
         GSpaces.gV16,
         SizedBox(
           height: 60,

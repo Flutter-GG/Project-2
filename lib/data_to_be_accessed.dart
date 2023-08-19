@@ -28,20 +28,27 @@ List<User> registerdUsers = [
   )
 ];
 
-
 String? userNmae; //for checking the user name match enterd one
-bool? isUserAccount; //For returning info on cart page and user page
-
+String? userEmailText;
+bool? isUserAccount = false; //For returning info on cart page and user page
 
 userExist(String email, String password) {
-  for (var element in registerdUsers) {
-    if (element.email == email) {
-      if (element.password == password) {
-        userNmae = element.name;
-        return true;
+  if (email.isEmpty || password.isEmpty) {
+    isUserAccount = false;
+    return false;
+  } else {
+    for (var element in registerdUsers) {
+      if (element.email == email) {
+        if (element.password == password) {
+          userNmae = element.name;
+          userEmailText = element.email;
+          isUserAccount = true;
+          return true;
+        }
       }
     }
   }
+
   return false;
 }
 
