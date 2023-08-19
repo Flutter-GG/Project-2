@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:ghars/constants/spaces.dart';
+import 'package:ghars/widgets/home_page_widgets/about_ghars_section.dart';
+import 'package:ghars/widgets/home_page_widgets/plant_type_buttons.dart';
+import 'package:ghars/widgets/home_page_widgets/search_filed.dart';
 import '../functions/search_func.dart';
 import '../model/plants_model.dart';
-import '../widgets/about_ghars_section.dart';
 import '../widgets/card_widgets/flip_card.dart';
-import '../widgets/plant_type_buttons.dart';
-import '../widgets/search_filed.dart';
 
 // ignore: must_be_immutable
 class HomePage extends StatefulWidget {

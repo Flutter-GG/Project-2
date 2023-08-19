@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/constants/colors.dart';
+import 'package:ghars/constants/spaces.dart';
+import 'package:ghars/screens/main_scaffold.dart';
 import 'package:ghars/utils/extintions.dart';
-import '../../constants/colors.dart';
-import '../../constants/spaces.dart';
-import '../../screens/main_scaffold.dart';
+import 'package:ghars/widgets/welcome_page_widgets/login_sheet.dart';
 
 class EntryOptions extends StatelessWidget {
   const EntryOptions({
@@ -13,29 +14,11 @@ class EntryOptions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 60,
-          width: MediaQuery.of(context).size.width * 0.85,
-          child: ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              backgroundColor: GColors.green,
-            ),
-            child: const Text(
-              "Log in",
-              style: TextStyle(
-                fontSize: 45,
-                fontFamily: 'AmaticSC',
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-          ),
-        ),
+        LoginSheet(),
         GSpaces.gV16,
         SizedBox(
           height: 60,
           width: MediaQuery.of(context).size.width * 0.85,
-
           //This button will do nothing
           child: ElevatedButton(
             onPressed: () {},
@@ -56,7 +39,7 @@ class EntryOptions extends StatelessWidget {
         GSpaces.gV16,
         InkWell(
           onTap: () {
-            context.push(screen: MainScaffold());
+            context.push(screen: const MainScaffold());
           },
           child: const Text(
             "Continue as guest",

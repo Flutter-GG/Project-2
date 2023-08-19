@@ -41,9 +41,11 @@ class _WelcomeScareenState extends State<WelcomeScareen> {
               child: Image.network(
                 "https://cdn-icons-png.flaticon.com/128/3042/3042268.png",
                 width: MediaQuery.of(context).size.width,
+                errorBuilder: (context, error, stackTrace) =>
+                    const Center(child: Icon(Icons.error)),
               ),
             ),
-            Positioned(
+            const Positioned(
               bottom: 100,
               left: 30,
               child: EntryOptions(),

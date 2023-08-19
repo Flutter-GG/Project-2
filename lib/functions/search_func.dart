@@ -1,5 +1,5 @@
 import 'package:ghars/data_to_be_accessed.dart';
-import '../widgets/search_filed.dart';
+import 'package:ghars/widgets/home_page_widgets/search_filed.dart';
 
 List displayedList() {
   if (searchFiledController.text.toLowerCase().isNotEmpty) {

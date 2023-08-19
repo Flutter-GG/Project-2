@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constants/spaces.dart';
+import 'package:ghars/constants/spaces.dart';
 
 class AboutGharsSection extends StatelessWidget {
   const AboutGharsSection({

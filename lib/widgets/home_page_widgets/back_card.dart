@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/constants/colors.dart';
+import 'package:ghars/model/plants_model.dart';
+import 'package:ghars/widgets/card_widgets/cart_button.dart';
+import 'package:ghars/widgets/card_widgets/number_of_item_row.dart';
 import 'package:shimmer/shimmer.dart';
-import '../constants/colors.dart';
-import '../model/plants_model.dart';
-import 'card_widgets/cart_button.dart';
-import 'card_widgets/number_of_item_row.dart';
+
 
 class BackCrd extends StatefulWidget {
   const BackCrd({super.key, required this.plants});
