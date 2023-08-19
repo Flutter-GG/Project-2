@@ -5,15 +5,16 @@ import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 import 'package:flutter_shopping_app/data/reading_json.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+class ProductsScreen extends StatefulWidget {
+  const ProductsScreen({super.key});
 
   @override
-  State<ProfileScreen> createState() => _ItemsScreenState();
+  State<ProductsScreen> createState() => _ItemsScreenState();
 }
 
-class _ItemsScreenState extends State<ProfileScreen> {
+class _ItemsScreenState extends State<ProductsScreen> {
   bool _isLoading = true;
+
   @override
   void initState() {
     super.initState();
@@ -23,7 +24,7 @@ class _ItemsScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(text: 'Profile'),
+      appBar: const CustomAppBar(text: 'Home'),
       body: _isLoading
           ? const CircularProgressIndicator()
           : CustomProductsInformation(

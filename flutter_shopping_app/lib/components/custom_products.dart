@@ -3,7 +3,7 @@ import 'package:flutter_shopping_app/components/custom_container.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 import 'package:flutter_shopping_app/screens/single_item_screen.dart';
-// import 'package:flutter_shopping_app/data/products_model.dart';
+import 'package:flutter_shopping_app/screens/update_product.dart';
 
 class CustomProductsInformation extends StatefulWidget {
   const CustomProductsInformation({
@@ -33,14 +33,17 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
           description: product.description,
           price: product.price,
           rating: product.rating,
-          addItem: () {
+          addProduct: () {
             _addItems(product);
           },
-          deleteItem: () {
+          deleteProduct: () {
             _deleteItems(product);
           },
           goToSingleProduct: () {
             _goToSingleItem(context, product);
+          },
+          editProduct: () {
+            _editProduct(context, product);
           },
         );
       },
@@ -69,6 +72,19 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
           singleItem: item,
         ),
       ),
+    );
+  }
+
+  void _editProduct(BuildContext context, ProductsModel item) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => UpdateProductScreen(product: item),
+      ),
+    ).then(
+      (value) => {
+        if (value == "update") {setState(() {})}
+      },
     );
   }
 }

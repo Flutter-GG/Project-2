@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_shopping_app/screens/items_screen.dart';
+import 'package:flutter_shopping_app/screens/products_screen.dart';
 import 'package:flutter_shopping_app/screens/profile_screen.dart';
 import 'package:flutter_shopping_app/screens/search_screen.dart';
 import 'package:navbar_router/navbar_router.dart';
@@ -15,7 +15,7 @@ class CustomBottomNavBar extends StatelessWidget {
 
   final Map<int, Map<String, Widget>> _routes = const {
     0: {
-      '/': ItemsScreen(),
+      '/': ProductsScreen(),
     },
     1: {
       '/': SearchScreen(),

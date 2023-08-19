@@ -4,3 +4,4 @@ List<ProductsModel> products = [];
 List<ProductsModel> cart = [];
 List<ProductsModel> search = [];
 List<ProductsModel> profileProducts = [];
+Map<String, dynamic> userAuth = {};

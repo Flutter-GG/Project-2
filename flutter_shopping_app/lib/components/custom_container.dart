@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/components/custom_text.dart';
+import 'package:flutter_shopping_app/extensions/colors.dart';
+import 'package:flutter_shopping_app/extensions/extensions.dart';
 import 'package:slideable/slideable.dart';
 
 class CustomContainer extends StatelessWidget {
@@ -15,13 +17,15 @@ class CustomContainer extends StatelessWidget {
     required this.price,
     this.discountPercentage,
     required this.rating,
-    this.addItem,
-    this.deleteItem,
+    this.addProduct,
+    this.deleteProduct,
     this.goToSingleProduct,
+    this.editProduct,
   });
-  final Function()? addItem;
-  final Function()? deleteItem;
+  final Function()? addProduct;
+  final Function()? deleteProduct;
   final Function()? goToSingleProduct;
+  final Function()? editProduct;
   final num? id;
   final num? stock;
   final String? brand;
@@ -39,7 +43,7 @@ class CustomContainer extends StatelessWidget {
       onTap: goToSingleProduct ?? () {},
       child: SizedBox(
         height: 100,
-        width: MediaQuery.of(context).size.width,
+        width: context.width,
         child: Center(
           child: Slideable(
             resetSlide: true,
@@ -47,17 +51,25 @@ class CustomContainer extends StatelessWidget {
               ActionItems(
                 icon: const Icon(
                   Icons.shopping_cart,
-                  color: Colors.blue,
+                  color: CustomColors.blue,
                 ),
-                onPress: addItem ?? () {},
+                onPress: addProduct ?? () {},
                 backgroudColor: Colors.transparent,
               ),
               ActionItems(
                 icon: const Icon(
                   Icons.delete,
-                  color: Colors.red,
+                  color: CustomColors.red,
                 ),
-                onPress: deleteItem ?? () {},
+                onPress: deleteProduct ?? () {},
+                backgroudColor: Colors.transparent,
+              ),
+              ActionItems(
+                icon: const Icon(
+                  Icons.edit_document,
+                  color: CustomColors.blue,
+                ),
+                onPress: editProduct ?? () {},
                 backgroudColor: Colors.transparent,
               ),
             ],
@@ -67,10 +79,10 @@ class CustomContainer extends StatelessWidget {
                 vertical: 12,
               ),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: CustomColors.white,
                 border: Border.all(
                   width: 1,
-                  color: Colors.black,
+                  color: CustomColors.black,
                 ),
                 borderRadius: BorderRadius.circular(10),
               ),
@@ -81,11 +93,11 @@ class CustomContainer extends StatelessWidget {
                     height: 50,
                     width: 50,
                     decoration: BoxDecoration(
-                      color: Colors.grey[350],
+                      color: CustomColors.grey,
                       shape: BoxShape.circle,
                       border: Border.all(
                         width: 1,
-                        color: Colors.white,
+                        color: CustomColors.white,
                       ),
                     ),
                     child: ClipRRect(
@@ -106,14 +118,14 @@ class CustomContainer extends StatelessWidget {
                           text: "$title",
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: CustomColors.black,
                         ),
                         const SizedBox(height: 5),
                         CustomText(
                           text: "$description",
                           fontSize: 12,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black,
+                          color: CustomColors.black,
                         ),
                         const SizedBox(height: 5),
                         Row(
@@ -123,7 +135,7 @@ class CustomContainer extends StatelessWidget {
                                   "$brand, $category, $stock, $rating★, \$$price",
                               fontSize: 12,
                               fontWeight: FontWeight.normal,
-                              color: Colors.black,
+                              color: CustomColors.black,
                             ),
                           ],
                         ),

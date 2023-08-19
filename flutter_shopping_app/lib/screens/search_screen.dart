@@ -26,9 +26,13 @@ class _SearchScreenState extends State<SearchScreen> {
 
               for (var product in products) {
                 if (product.title
-                        ?.toLowerCase()
-                        .contains(value.toLowerCase()) ==
-                    true) {
+                            ?.toLowerCase()
+                            .contains(value.toLowerCase()) ==
+                        true ||
+                    product.category
+                            ?.toLowerCase()
+                            .contains(value.toLowerCase()) ==
+                        true) {
                   setState(() {
                     search.add(product);
                   });

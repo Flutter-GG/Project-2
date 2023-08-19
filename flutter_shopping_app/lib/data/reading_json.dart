@@ -1,6 +1,12 @@
-import 'dart:io';
 import 'dart:convert';
+import 'package:http/http.dart' as http;
 
-var jsonData = json.decode(File(
-        '/Users/mohammedalsahli/Desktop/Desktop - Mohammed’s Macbook air/Project-2/flutter_shopping_app/lib/data/products.json')
-    .readAsStringSync());
+Future<dynamic> fetchJsonData() async {
+  var response = await http.get(Uri.parse('https://dummyjson.com/products'));
+
+  if (response.statusCode == 200) {
+    return json.decode(response.body);
+  } else {
+    throw Exception('Failed to load JSON data');
+  }
+}
