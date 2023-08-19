@@ -3,6 +3,8 @@ import '../widgets/search_filed.dart';
 
 List displayedList() {
   if (searchFiledController.text.toLowerCase().isNotEmpty) {
+    isIndoor = false;
+    isOutdoor = false;
     searchResult.clear();
     for (var element in listOfPlants) {
       if (element.name
@@ -15,6 +17,10 @@ List displayedList() {
       }
     }
     return searchResult;
+  } else if (isIndoor && isOutdoor == false) {
+    return indoorPlants;
+  } else if (isOutdoor && isIndoor == false) {
+    return outdoorPlants;
   } else {
     return listOfPlants;
   }

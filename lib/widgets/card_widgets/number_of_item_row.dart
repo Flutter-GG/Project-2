@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import '../../functions/quantity_func.dart';
 import '../../model/plants_model.dart';
 
-
 // ignore: must_be_immutable
 class NumberOfItem extends StatefulWidget {
   const NumberOfItem({
     super.key,
     this.buttonSize = 20,
-    this.numberSize = 22,  required this.plants,
+    this.numberSize = 22,
+    required this.plants,
   });
 
   final double buttonSize;

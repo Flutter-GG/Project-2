@@ -1,21 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/main.dart';
 import '../constants/colors.dart';
 
-class PlantTypeButtons extends StatelessWidget {
+class PlantTypeButtons extends StatefulWidget {
   const PlantTypeButtons({
     super.key,
   });
 
+  @override
+  State<PlantTypeButtons> createState() => _PlantTypeButtonsState();
+}
+
+class _PlantTypeButtonsState extends State<PlantTypeButtons> {
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            isIndoor = !isIndoor;
+            setState(() {});
+            // context.findAncestorStateOfType<CartPageState>()!.setState(() {});
+          },
           style: ButtonStyle(
-            backgroundColor:
-                MaterialStateProperty.all<Color>(GColors.lightDarkGreen),
+            backgroundColor: MaterialStateProperty.all<Color>(
+                isIndoor ? GColors.green : GColors.lightDarkGreen),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
@@ -30,10 +40,14 @@ class PlantTypeButtons extends StatelessWidget {
           ),
         ),
         ElevatedButton(
-          onPressed: () {},
+          onPressed: () {
+            isOutdoor = !isOutdoor;
+            setState(() {});
+            // context.findAncestorStateOfType<CartPageState>()!.setState(() {});
+          },
           style: ButtonStyle(
-            backgroundColor:
-                MaterialStateProperty.all<Color>(GColors.lightDarkGreen),
+            backgroundColor: MaterialStateProperty.all<Color>(
+                isOutdoor ? GColors.green : GColors.lightDarkGreen),
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
               RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),

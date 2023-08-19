@@ -15,7 +15,7 @@ class MainScaffold extends StatefulWidget {
 }
 
 class MainScaffoldState extends State<MainScaffold> {
-  int index = 0; //Need to be changed to home page index, which is 1
+  int index = 1; //Need to be changed to home page index, which is 1
   final pages = [
     const CartPage(),
     const HomePage(),

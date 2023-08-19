@@ -6,7 +6,7 @@ import '../../model/plants_model.dart';
 import 'cart_button.dart';
 import 'number_of_item_row.dart';
 
-class ItemCard extends StatelessWidget {
+class ItemCard extends StatefulWidget {
   const ItemCard({
     super.key,
     required this.plants,
@@ -14,6 +14,11 @@ class ItemCard extends StatelessWidget {
 
   final Plants plants;
 
+  @override
+  State<ItemCard> createState() => ItemCardState();
+}
+
+class ItemCardState extends State<ItemCard> {
   @override
   Widget build(BuildContext context) {
     return Center(
@@ -42,7 +47,7 @@ class ItemCard extends StatelessWidget {
               highlightColor: GColors.lightGreen,
               period: const Duration(milliseconds: 5000),
               child: Text(
-                "${plants.price} SR",
+                "${widget.plants.price} SR",
                 style: const TextStyle(
                     color: GColors.black,
                     fontWeight: FontWeight.bold,
@@ -54,7 +59,7 @@ class ItemCard extends StatelessWidget {
             top: 50,
             right: -5,
             child: Image.network(
-              plants.imgUrl!,
+              widget.plants.imgUrl!,
               width: MediaQuery.of(context).size.width - 180,
               height: MediaQuery.of(context).size.height - 550,
               errorBuilder: (context, error, stackTrace) => const Padding(
@@ -75,7 +80,7 @@ class ItemCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    plants.name!,
+                    widget.plants.name!,
                     maxLines: 2,
                     style: const TextStyle(
                       fontSize: 25,
@@ -83,15 +88,15 @@ class ItemCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "${plants.type!} plant",
+                    "${widget.plants.type!} plant",
                     style: const TextStyle(
                       fontSize: 17,
                     ),
                   ),
                   GSpaces.gV16,
-                  NumberOfItem(plants: plants),
+                  NumberOfItem(plants: widget.plants),
                   GSpaces.gV8,
-                  CartButton(plants: plants)
+                  CartButton(plants: widget.plants)
                 ],
               ),
             ),
