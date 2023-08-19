@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ghars/main.dart';
+import 'package:ghars/data_to_be_accessed.dart';
 import '../constants/colors.dart';
 
 class PlantTypeButtons extends StatefulWidget {

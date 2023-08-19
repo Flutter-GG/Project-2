@@ -1,17 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ghars/datasets/plants_data.dart';
-import 'package:ghars/screens/main_scaffold.dart';
+import 'package:ghars/screens/wlcome_screen.dart';
+import 'data_to_be_accessed.dart';
 import 'functions/category_fun.dart';
 import 'model/plants_model.dart';
-
-List listOfPlants = [];
-List searchResult = [];
-List cartItemList = [];
-List indoorPlants = [];
-List outdoorPlants = [];
-
-bool isIndoor = false;
-bool isOutdoor = false;
 
 void main() {
   for (var element in plantData) {
@@ -30,8 +22,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MainScaffold(),
-    );
+    return const MaterialApp(home: WelcomeScareen()
+        //MainScaffold(),
+        );
   }
 }

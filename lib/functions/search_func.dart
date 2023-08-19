@@ -1,4 +1,4 @@
-import '../main.dart';
+import 'package:ghars/data_to_be_accessed.dart';
 import '../widgets/search_filed.dart';
 
 List displayedList() {

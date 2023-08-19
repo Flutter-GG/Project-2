@@ -1,4 +1,4 @@
-import '../main.dart';
+import '../data_to_be_accessed.dart';
 import '../model/plants_model.dart';
 
 increaseQuantity(Plants plants) {

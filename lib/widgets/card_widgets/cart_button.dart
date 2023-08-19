@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/data_to_be_accessed.dart';
 import '../../constants/colors.dart';
-import '../../main.dart';
 import '../../model/plants_model.dart';
 
 class CartButton extends StatefulWidget {

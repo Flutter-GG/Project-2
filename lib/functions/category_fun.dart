@@ -1,4 +1,4 @@
-import 'package:ghars/main.dart';
+import '../data_to_be_accessed.dart';
 
 listOfCategory() {
   for (int i = 0; i < listOfPlants.length; i++) {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/data_to_be_accessed.dart';
 import 'package:ghars/functions/quantity_func.dart';
-import 'package:ghars/main.dart';
 import '../../constants/colors.dart';
 import '../../constants/spaces.dart';
 import '../../model/plants_model.dart';
