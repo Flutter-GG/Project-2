@@ -3,6 +3,7 @@ import 'package:flutter_shopping_app/components/custom_app_bar.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 
+/* this is the page to add new products */
 class AddItemScreen extends StatefulWidget {
   const AddItemScreen({super.key});
 

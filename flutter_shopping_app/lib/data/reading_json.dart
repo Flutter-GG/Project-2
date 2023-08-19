@@ -1,3 +1,4 @@
+/* I chose to read data from dummyjson.com instead of json file */
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 

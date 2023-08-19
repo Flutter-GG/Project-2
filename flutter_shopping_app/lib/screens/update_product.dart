@@ -3,7 +3,7 @@ import 'package:flutter_shopping_app/components/custom_app_bar.dart';
 import 'package:flutter_shopping_app/components/custom_text.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 
-/* this is for updating the post, change the body anf the title of the post */
+/* this is for updating the product */
 class UpdateProductScreen extends StatefulWidget {
   final ProductsModel product;
 

@@ -3,6 +3,7 @@ import 'package:flutter_shopping_app/components/custom_app_bar.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/screens/login_screen.dart';
 
+/* this is for new users, the data will saved in userAuth Map in the global_var.dart */
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 

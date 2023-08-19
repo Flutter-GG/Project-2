@@ -5,6 +5,7 @@ import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/screens/init_screen.dart';
 import 'package:flutter_shopping_app/screens/sign_up_screen.dart';
 
+/* this is for authontication for old and new users if they have account or not */
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
 
@@ -61,12 +62,11 @@ class _LoginScreenState extends State<LoginScreen> {
     final String password = _passwordController.text;
 
     if (userName == userAuth['userName'] && password == userAuth['password']) {
-      Navigator.pushAndRemoveUntil(
+      Navigator.push(
         context,
         MaterialPageRoute(
           builder: (context) => const InitScreen(),
         ),
-        (route) => false,
       );
     } else {
       showDialog(

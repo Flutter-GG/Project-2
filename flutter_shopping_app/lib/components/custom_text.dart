@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+/* simple custom componant for text */
 class CustomText extends StatelessWidget {
   const CustomText({
     super.key,

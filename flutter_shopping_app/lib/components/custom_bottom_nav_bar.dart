@@ -2,15 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/screens/products_screen.dart';
 import 'package:flutter_shopping_app/screens/profile_screen.dart';
 import 'package:flutter_shopping_app/screens/search_screen.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:navbar_router/navbar_router.dart';
 
+/* the bottom navbar with a library to make it easier */
 class CustomBottomNavBar extends StatelessWidget {
   const CustomBottomNavBar({Key? key}) : super(key: key);
 
   static List<NavbarItem> items = [
-    NavbarItem(Icons.home, 'Home', backgroundColor: colors[0]),
-    NavbarItem(Icons.shopping_bag, 'Search', backgroundColor: colors[1]),
-    NavbarItem(Icons.person, 'Profile', backgroundColor: colors[2]),
+    NavbarItem(FontAwesomeIcons.house, 'Home', backgroundColor: colors[0]),
+    NavbarItem(FontAwesomeIcons.searchengin, 'Search',
+        backgroundColor: colors[1]),
+    NavbarItem(FontAwesomeIcons.person, 'Profile', backgroundColor: colors[2]),
   ];
 
   final Map<int, Map<String, Widget>> _routes = const {

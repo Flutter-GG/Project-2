@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/components/custom_text.dart';
 import 'package:flutter_shopping_app/extensions/colors.dart';
 import 'package:flutter_shopping_app/extensions/extensions.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:slideable/slideable.dart';
 
+/* this is the custom container, I used FontAwesomeIcons for icons */
 class CustomContainer extends StatelessWidget {
   const CustomContainer({
     super.key,
@@ -21,11 +23,13 @@ class CustomContainer extends StatelessWidget {
     this.deleteProduct,
     this.goToSingleProduct,
     this.editProduct,
+    this.addToProfile,
   });
   final Function()? addProduct;
   final Function()? deleteProduct;
   final Function()? goToSingleProduct;
   final Function()? editProduct;
+  final Function()? addToProfile;
   final num? id;
   final num? stock;
   final String? brand;
@@ -50,7 +54,7 @@ class CustomContainer extends StatelessWidget {
             items: <ActionItems>[
               ActionItems(
                 icon: const Icon(
-                  Icons.shopping_cart,
+                  FontAwesomeIcons.cartShopping,
                   color: CustomColors.blue,
                 ),
                 onPress: addProduct ?? () {},
@@ -58,7 +62,7 @@ class CustomContainer extends StatelessWidget {
               ),
               ActionItems(
                 icon: const Icon(
-                  Icons.delete,
+                  FontAwesomeIcons.deleteLeft,
                   color: CustomColors.red,
                 ),
                 onPress: deleteProduct ?? () {},
@@ -66,10 +70,18 @@ class CustomContainer extends StatelessWidget {
               ),
               ActionItems(
                 icon: const Icon(
-                  Icons.edit_document,
+                  FontAwesomeIcons.pen,
                   color: CustomColors.blue,
                 ),
                 onPress: editProduct ?? () {},
+                backgroudColor: Colors.transparent,
+              ),
+              ActionItems(
+                icon: const Icon(
+                  FontAwesomeIcons.personRifle,
+                  color: CustomColors.blue,
+                ),
+                onPress: addToProfile ?? () {},
                 backgroudColor: Colors.transparent,
               ),
             ],

@@ -4,7 +4,10 @@ import 'package:flutter_shopping_app/components/custom_products.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 import 'package:flutter_shopping_app/data/reading_json.dart';
+import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh.dart';
+import 'package:loading_animations/loading_animations.dart';
 
+/* this is the home page for all products */
 class ProductsScreen extends StatefulWidget {
   const ProductsScreen({super.key});
 
@@ -25,11 +28,18 @@ class _ItemsScreenState extends State<ProductsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const CustomAppBar(text: 'Home'),
-      body: _isLoading
-          ? const CircularProgressIndicator()
-          : CustomProductsInformation(
-              products: products,
-            ),
+      body: LiquidPullToRefresh(
+        onRefresh: () {
+          return Future.delayed(const Duration(milliseconds: 5), () {
+            setState(() {});
+          });
+        },
+        child: _isLoading
+            ? LoadingFilling.square()
+            : CustomProductsInformation(
+                products: products,
+              ),
+      ),
     );
   }
 

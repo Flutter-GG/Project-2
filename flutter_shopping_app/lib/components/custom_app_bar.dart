@@ -2,12 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_shopping_app/components/custom_text.dart';
 import 'package:flutter_shopping_app/screens/add_product_screen.dart';
 import 'package:flutter_shopping_app/screens/cart_screen.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({Key? key, required this.text}) : super(key: key);
   final String text;
-
+/* this is the app bar componant */
   @override
+  // ignore: library_private_types_in_public_api
   _CustomAppBarState createState() => _CustomAppBarState();
 
   @override
@@ -23,7 +25,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
           onPressed: () {
             _cart(context);
           },
-          icon: const Icon(Icons.shopping_cart),
+          icon: const Icon(FontAwesomeIcons.cartShopping),
         ),
         IconButton(
           onPressed: () {
@@ -38,7 +40,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
               },
             );
           },
-          icon: const Icon(Icons.add),
+          icon: const Icon(FontAwesomeIcons.plus),
         ),
       ],
       title: CustomText(

@@ -5,6 +5,7 @@ import 'package:flutter_shopping_app/data/products_model.dart';
 import 'package:flutter_shopping_app/screens/single_item_screen.dart';
 import 'package:flutter_shopping_app/screens/update_product.dart';
 
+/* this is the custom product container to manage the product data and functionality only */
 class CustomProductsInformation extends StatefulWidget {
   const CustomProductsInformation({
     super.key,
@@ -44,6 +45,9 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
           },
           editProduct: () {
             _editProduct(context, product);
+          },
+          addToProfile: () {
+            _addToProfile(product);
           },
         );
       },
@@ -85,6 +89,13 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
       (value) => {
         if (value == "update") {setState(() {})}
       },
+    );
+  }
+
+  void _addToProfile(ProductsModel item) {
+    profileProducts.add(item);
+    setState(
+      () {},
     );
   }
 }

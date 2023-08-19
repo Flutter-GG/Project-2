@@ -1,3 +1,5 @@
+/* this si the model for the json data */
+
 class ProductsModel {
   num? id;
   String? title;

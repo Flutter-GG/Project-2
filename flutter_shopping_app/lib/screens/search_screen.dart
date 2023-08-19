@@ -3,6 +3,7 @@ import 'package:flutter_shopping_app/components/custom_app_bar.dart';
 import 'package:flutter_shopping_app/components/custom_products.dart';
 import 'package:flutter_shopping_app/data/global_var.dart';
 
+/* this is for search, form the title and the category to filter it */
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
