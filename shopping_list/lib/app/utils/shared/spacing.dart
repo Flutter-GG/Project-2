@@ -20,7 +20,7 @@ const xlarge = 0.15;
 const xxlarge = 0.2;
 const xxxlarge = 0.25;
 const xxxxlarge = 0.3;
-const xxxxxlarge = 0.35;
+const xxxxxlarge = 0.45;
 
 
 
