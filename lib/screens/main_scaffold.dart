@@ -18,7 +18,7 @@ class MainScaffoldState extends State<MainScaffold> {
   int index = 0; //Need to be changed to home page index, which is 1
   final pages = [
     const CartPage(),
-    HomePage(),
+    const HomePage(),
     const UserPage(),
   ];
 

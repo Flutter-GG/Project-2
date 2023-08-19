@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ghars/functions/quantity_func.dart';
 import 'package:ghars/main.dart';
 import '../../constants/colors.dart';
 import '../../constants/spaces.dart';
@@ -54,9 +55,11 @@ class _CartItemCardState extends State<CartItemCard> {
                 GSpaces.gV16,
                 Row(
                   children: [
-                    Text("2 X ${widget.plants.price}"), //Related to counter
+                    Text(
+                        "${widget.plants.quantity} X ${widget.plants.price}"), //Related to counter
                     GSpaces.gH16,
-                    const Text("Total: 1000"), // Realted to counter
+                    Text(
+                        "Total: ${plantsTotal(widget.plants)}"), // Realted to counter
                   ],
                 ),
               ],
@@ -69,6 +72,7 @@ class _CartItemCardState extends State<CartItemCard> {
               IconButton(
                 onPressed: () {
                   cartItemList.remove(widget.plants);
+                  widget.plants.quantity = 1;
                   setState(() {});
                   context
                       .findAncestorStateOfType<CartPageState>()
@@ -81,12 +85,22 @@ class _CartItemCardState extends State<CartItemCard> {
               ),
               Row(
                 children: [
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.remove)),
-                  const Text(
-                    "2", //Number related to counter
-                    style: TextStyle(fontSize: 20),
+                  IconButton(
+                      onPressed: () {
+                        decreaseQuantity(widget.plants);
+                        setState(() {});
+                      },
+                      icon: const Icon(Icons.remove)),
+                  Text(
+                    "${widget.plants.quantity}", //Number related to counter
+                    style: const TextStyle(fontSize: 20),
                   ),
-                  IconButton(onPressed: () {}, icon: const Icon(Icons.add)),
+                  IconButton(
+                      onPressed: () {
+                        increaseQuantity(widget.plants);
+                        setState(() {});
+                      },
+                      icon: const Icon(Icons.add)),
                 ],
               ),
             ],

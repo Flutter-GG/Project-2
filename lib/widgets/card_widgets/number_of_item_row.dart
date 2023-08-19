@@ -1,16 +1,20 @@
 import 'package:flutter/material.dart';
+import '../../functions/quantity_func.dart';
+import '../../model/plants_model.dart';
 
-int counter = 1;
 
 // ignore: must_be_immutable
 class NumberOfItem extends StatefulWidget {
   const NumberOfItem({
     super.key,
     this.buttonSize = 20,
-    this.numberSize = 22,
+    this.numberSize = 22,  required this.plants,
   });
+
   final double buttonSize;
   final double numberSize;
+  final Plants plants;
+
   @override
   State<NumberOfItem> createState() => _NumberOfItemState();
 }
@@ -22,7 +26,7 @@ class _NumberOfItemState extends State<NumberOfItem> {
       children: [
         IconButton(
             onPressed: () {
-              counter != 1 ? counter-- : null;
+              decreaseQuantity(widget.plants);
               setState(() {});
             },
             icon: Icon(
@@ -30,12 +34,12 @@ class _NumberOfItemState extends State<NumberOfItem> {
               size: widget.buttonSize,
             )),
         Text(
-          "$counter",
+          "${widget.plants.quantity}",
           style: TextStyle(fontSize: widget.numberSize),
         ), // Number will be here
         IconButton(
           onPressed: () {
-            counter++;
+            increaseQuantity(widget.plants);
             setState(() {});
           },
           icon: Icon(

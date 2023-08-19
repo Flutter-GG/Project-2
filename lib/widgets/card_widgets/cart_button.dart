@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../main.dart';
 import '../../model/plants_model.dart';
-import 'number_of_item_row.dart';
 
 class CartButton extends StatefulWidget {
   const CartButton({
@@ -35,7 +34,7 @@ class _CartButtonState extends State<CartButton> {
           padding: const EdgeInsets.only(bottom: 20, left: 20),
           duration: const Duration(milliseconds: 1500),
           content: Text(
-            '$counter Item add to the cart',
+            '${widget.plants.quantity} Item add to the cart',
             style: const TextStyle(
               color: GColors.darkGreen,
               fontWeight: FontWeight.bold,

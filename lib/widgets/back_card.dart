@@ -102,9 +102,10 @@ class _BackCrdState extends State<BackCrd> {
                     ),
                   ),
                 ),
-                const NumberOfItem(
+                NumberOfItem(
                   buttonSize: 15,
                   numberSize: 20,
+                  plants: widget.plants,
                 ),
                 CartButton(
                   buttonSize: 50,
