@@ -7,7 +7,7 @@ import 'package:flutter_shopping_app/data/reading_json.dart';
 import 'package:liquid_pull_to_refresh/liquid_pull_to_refresh.dart';
 import 'package:loading_animations/loading_animations.dart';
 
-/* this is the home page for all products */
+/* this is the home page for all products, used LiquidPullToRefresh library */
 class ProductsScreen extends StatefulWidget {
   const ProductsScreen({super.key});
 

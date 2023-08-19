@@ -5,7 +5,7 @@ import 'package:flutter_shopping_app/components/custom_text.dart';
 import 'package:flutter_shopping_app/data/products_model.dart';
 import 'package:flutter_shopping_app/extensions/colors.dart';
 
-/* if you want to see item extra details */
+/* if you want to see item extra details, used flutter_image_slideshow library */
 class SinglePostScreen extends StatefulWidget {
   const SinglePostScreen({Key? key, required this.singleItem})
       : super(key: key);

@@ -5,7 +5,7 @@ import 'package:flutter_shopping_app/extensions/extensions.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:slideable/slideable.dart';
 
-/* this is the custom container, I used FontAwesomeIcons for icons */
+/* this is the custom container, I used FontAwesomeIcons for icons and Slideable for buttons */
 class CustomContainer extends StatelessWidget {
   const CustomContainer({
     super.key,
