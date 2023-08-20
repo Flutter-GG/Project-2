@@ -39,30 +39,29 @@ Your task is to create a Flutter app that demonstrates global data management fo
   - View: Display the list of items in the shopping list with their details.
   - Update: Allow users to modify the details of any item in the shopping list.
   - Remove: Enable users to delete items from the shopping list.
-- **Utilizing Packages:** It is required that you use at least eight packages from *pub.dev*.
+- **Utilizing Packages:** It is required that you use at least eight packages from _pub.dev_.
 
-## Ideas for Extra Credit
+Packages:
+shimmer
+intro
+animated_text_kit
+refresh
+zoom in
+awosme dialog
+curve navigation bar
+----------------------------------
+# SCREENSHOTS OF THE APPLICATION 
 
-1. **User Authentication:** Implement a user registration and login system to allow multiple users to have their own personalized shopping lists.
-2. **Categories and Sorting:** Add support for categorizing shopping list items. Users can assign items to different categories such as groceries, household items, or personal care. Implement sorting options based on categories, alphabetical order, or user-defined priorities!
-3. **Coupons and Deals:** Integrate with coupon and deal APIs to provide users with relevant discounts and offers for the items on their shopping list. Users can save money by taking advantage of available deals.
-
-## Delivery Requirements
-
-- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
-- **Readme File:**
-  - Create a README.md file in the root directory of your GitHub repository.
-  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
-    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
-    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
-    - **Features:** List all the features and functionalities of the app. Mention the core capabilities of the app, such as adding items to the shopping list, updating items, deleting items, etc.
-    - **Technologies Used:** Mention the technologies and libraries utilized in the development of the app. This could include mentioning Flutter, specific plugins used, or any other relevant technologies.
-    - **Code Explanation:** Optionally, provide explanations or documentation for the key parts of the code if necessary. This could be particularly helpful for complex algorithms or unique implementations.
-
-## Resources
-
-- [Dart Tutorials](https://dart.dev/tutorials)
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Flutter Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/flutter-tutorial/)
-
-Good luck with your exam project! If you have any general questions or need guidance, don't hesitate to reach out to the instructor. Happy coding!
+![alt text](assets\images\animated.png)
+![alt text](assets\images\cart.png)
+![alt text](assets\images\detailes.png)
+![alt text](assets\images\error.png)
+![alt text](assets\images\homr.png)
+![alt text](assets\images\login.png)
+![alt text](assets\images\quantity.png)
+![alt text](assets\images\search.png)
+![alt text](assets\images\signup.png)
+![alt text](assets\images\slidable.png)
+![alt text](assets\images\update.png)
+![alt text](assets\images\welcome.png)
+![alt text](assets\images\introduction.png)
