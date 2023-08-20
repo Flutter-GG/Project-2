@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:ghars/constants/spaces.dart';
 import 'package:ghars/widgets/home_page_widgets/about_ghars_section.dart';
 import 'package:ghars/widgets/home_page_widgets/plant_type_buttons.dart';
@@ -33,16 +34,27 @@ class HomePageState extends State<HomePage> {
             GSpaces.gV8,
             Expanded(
               //The list of cards "Plants card"
-              child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: displayedList().length,
-                itemBuilder: ((context, index) {
-                  //Return the Fliped card
-                  return FlipedCard(
-                    index: index,
-                    plants: widget.plants,
-                  );
-                }),
+              child: AnimationLimiter(
+                child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: displayedList().length,
+                  itemBuilder: ((BuildContext context, index) {
+                    //Return the Fliped card
+                    return AnimationConfiguration.staggeredList(
+                      position: index,
+                      duration: const Duration(milliseconds: 700),
+                      child: SlideAnimation(
+                        horizontalOffset: 50.0,
+                        child: FadeInAnimation(
+                          child: FlipedCard(
+                            index: index,
+                            plants: widget.plants,
+                          ),
+                        ),
+                      ),
+                    );
+                  }),
+                ),
               ),
             ),
             const Padding(
