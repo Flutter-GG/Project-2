@@ -6,7 +6,7 @@ A new Flutter project is a Shopping App..
 
 
 
-**This is a Splash page**
+**This is a Splash page**\
 <img width="276" alt="This is a Spalsh page" src="/assets/Screens_for_Readme/Screen1.png">
 
 ### This is inint screen 
