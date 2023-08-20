@@ -1,0 +1,185 @@
+{
+    "products": [
+      {
+        "productId": 1,
+        "productName": "Orange",
+        "productImage": "https://www.mz-store.com/blog/wp-content/uploads_en/2020/11/shutterstock_342874121.jpg",
+        "productDescribe": "The most popular orange variety is the Navel Orange, which is a seedless and has a thick bumpy skin and the distinctive “belly button” appearance at one end. The Navel...",
+        "prica": 15,
+        "amount": 23,
+        "category":"fruit"
+      },
+      {
+        "productId": 2,
+        "productName": "Strawberry",
+        "productImage":"https://allmanhall.co.uk/wp-content/uploads/2019/06/Strawberries-on-white-background.jpg",
+        "productDescrib§e": "Grown In Australia Strawberries are grown worldwide and the fruit is widely appreciated for its characteristic aroma, bright red color, juicy texture, and sweetness. Strawberries are high in antioxidants and...",
+        "prica": 19,
+        "amount":23,
+        "category":"fruit"
+      },
+      {
+        "productId": 3,
+        "productName": "Peaches Yellow Bulk",
+        "productImage":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST5eWb29Jt0au2lKwBq4BZQGxHfZj9CYVK0w&usqp=CAU",
+        "productDescribe": "Produce of USA White Peaches have a sweet white to pale yellow flesh with the skin colour ranging from yellow/green to yellow/red.",
+        "prica": 17,
+        "amount":32,
+        "category":"fruit"
+      },
+      {
+        "productId": 4,
+        "productName": "Grapes red seedless 1kg",
+        "productImage":"https://freshsensations.com.au/cdn/shop/products/Redgrapes2.png?v=1643769458",
+        "productDescribe": "Grown In Australia The Red Seedless Grapes are a medium size grape with a firm crisp flavour. It has a bright red to dark red colour, and a perfect table...",
+        "prica": 16,
+        "amount":32,
+        "category":"fruit"
+      },
+      {
+        "productId": 5,
+        "productName": "Blueberries",
+        "productImage":"https://media.istockphoto.com/id/853493518/photo/blueberry-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=bRUIuOyJx74vcgZcf2BwjfhnGxaEJ3N6VNjsLn8eXtw=",
+        "productDescribe": "Grown In Australia Blueberries are a small berry that have a smooth silver frosted blue-black colour with a sweet yet mild tangy flavour. .",
+        "prica": 16,
+        "amount":52,
+        "category":"fruit"
+      },
+      {
+        "productId": 6,
+        "productName": "Grapefruit pink 1Kg",
+        "productImage":"https://www.firstchoiceproduce.com/wp-content/uploads/2020/03/pink-grapefruit.jpg",
+        "productDescribe": "Grown In Australia Pink Grapefruit are also known as Ruby, Ruby Red or Red Blush Grapefruit. As the name suggests they have pink-red flesh, and a strong red blushed skin....",
+        "prica": 14,
+        "amount":72,
+        "category":"fruit"
+      },
+      {
+        "productId": 7,
+        "productName": "Apples delicious 1kg",
+        "productImage":"https://fruitboxco.com/cdn/shop/products/image_800x.jpg?v=1607579884",
+        "productDescribe": "Grown In Australia Red Delicious Apples are deep red to crimson in colour. The red delicious apple is medium in sweetness with juicy creamy white flesh and a highly aromatic...",
+        "prica": 13,
+        "amount":72,
+        "category":"fruit"
+      },
+      {
+        "productId": 8,
+        "productName": "Kiwi fruit",
+        "productImage":"https://shop.organicmandya.com/cdn/shop/products/1y79UWGdIyhJsKIJOPUtusB17UwyLxWjO_5fce89fb-6f56-405f-8042-f24c5bd65454_1200x1074.jpg?v=1608550660",
+        "productDescribe": "The Kiwifruit is, native to China. It first arrived in New Zealand at the turn of the century. It was then better known by the name Chinese Gooseberry.",
+        "prica":13,
+        "amount":32,
+        "category":"fruit"
+      },
+      {
+        "productId": 9,
+        "productName": "Fruit bowl tropical 400g",
+        "productImage":"https://st.depositphotos.com/1027198/2807/i/950/depositphotos_28077813-stock-photo-fruit-salad.jpg",
+        "productDescribe": "Fruit Bowl Tropical 400g",
+        "prica": 25,
+        "amount":22,
+        "category":"Salad"
+      },
+      {
+        "productId": 10,
+        "productName": "Kiwi fruit gold",
+        "productImage":"https://www.farzana.ae/images/thumbs/0005021_kiwi-gold.jpeg",
+        "productDescribe": "Grown In New Zealand Gold kiwifruit are an excellent source of vitamin C, dietary fibre, folate, and other minerals and antioxidants. They are one of the most nutrient-dense fruits in...",
+        "prica": 12,
+        "amount":26,
+        "category":"fruit"
+      },
+      {
+        "productId": 11,
+        "productName": "Mangoes bowen each",
+        "productImage":"https://bowenholidaypark.com.au/wp-content/uploads/2018/10/bowen-mango-2.jpg",
+        "productDescribe": "Grown In Australia Bowen Mangoes are also known as Kensington Pride Mangoes and is the most popular mango variety grown in the sub-tropical and tropical regions of Australia. The Bowen...",
+        "prica": 23,
+        "amount":24,
+        "category":"fruit"
+      },
+      {
+        "productId": 12,
+        "productName": "Passionfruit",
+        "productImage":"https://www.liveeatlearn.com/wp-content/uploads/2015/08/passion-fruit-photo-2.jpg",
+        "productDescribe": "Grown In Australia Fresh Passionfruit skin ranges from yellow to purple in colour, and often has a leathery appearance. Passionfruit pulp has an aromatic sweet-sour taste and golden orange in...",
+        "prica": 19,
+        "amount":28,
+        "category":"fruit"
+      },
+      {
+        "productId": 13,
+        "productName": "Pawpaw yellow whole",
+        "productImage":"https://www.butcherbakergrocer.com.au/cdn/shop/products/Pawpaw-Yellow-_1_19367dd8-84f9-4a22-a07a-2e8acbcfb224.png?v=1660129258",
+        "productDescribe": "Grown In Australia The Pawpaw is a bright yellow fruit with yellow flesh. Most often it has a round shape and a pale yellow/orange skin. When ripe its texture is...",
+        "prica": 16,
+        "amount":2,
+        "category":"fruit"
+      },
+      {
+        "productId": 14,
+        "productName": "Pears bosc 1kg",
+        "productImage":"https://www.harrisfarm.com.au/cdn/shop/products/4981-done_1024x1024.jpg?v=1584061079",
+        "productDescribe": "Grown In Australia Bosc pears are generally a dessert pear with a light greenish/brown skin. They have a white flesh which is quite firm and crisp which becomes soft and juicy as...",
+        "prica":13,
+        "amount":2,
+        "category":"fruit"
+      },
+      {
+        "productId": 15,
+        "productName": "Pomegranate",
+        "productImage":"https://thefreshandnatural.com/wp-content/uploads/2020/05/POMEGRANATE-KG.jpg",
+        "productDescribe": "Grown In Australia",
+        "prica": 14,
+        "amount":2,
+        "category":"fruit"
+      },
+      {
+        "productId": 16,
+        "productName": "Pineapple gold whole",
+        "productImage":"https://freshsensations.com.au/cdn/shop/products/Pineapple_599db5af-ab08-4af1-a0a9-71e487cae471.PNG?v=1555678896",
+        "productDescribe": "Grown In Australia Pineapple is a sweet-tart tropical fruit. This large oval shaped fruit is high in acid and covered with spiny skin. It is great eaten fresh or used...",
+        "prica": 19,
+        "amount":2,
+        "category":"fruit"
+      },
+      {
+        "productId": 17,
+        "productName": "Fruit salad with ice cream",
+        "productImage":"https://guccilounge.net/wp/wp-content/uploads/2021/04/FRUIT-SALAD-WITH-VANILLA-ICE-CREAM.jpg",
+        "productDescribe": "fruit salad with ice cream",
+        "prica": 25,
+        "amount":2,
+        "category":"salad"
+      },
+      {
+        "productId": 18,
+        "productName": "Fruit salad with yogurt",
+        "productImage":"https://www.flavourstreat.com/wp-content/uploads/2022/07/fresh-fruit-salad-with-yogurt-dressing-001.jpg",
+        "productDescribe": "Fruit salad with greek yogurt 400g ",
+        "prica": 25,
+        "amount":22,
+        "category":"salad"
+      },
+      {
+        "productId": 19,
+        "productName": "Fruit salad with yogurt and granola",
+        "productImage":"https://www.mydynamics.co.za/wp-content/uploads/2020/07/Fresh-fruit-salad-1024x1024.jpg",
+        "productDescribe": "Fruit salad with yogurt and granola 400g",
+        "prica": 25,
+        "amount":20,
+        "category":"salad"
+      },
+      {
+        "productId": 20,
+        "productName": "Fruit salad with nutella",
+        "productImage":"https://www.halladays.com/recipes/255.jpg",
+        "productDescribe": "Fruit salad with nutella 400g",
+        "prica": 25,
+        "amount":22,
+        "category":"salad"
+      }
+    ]
+  }
+  

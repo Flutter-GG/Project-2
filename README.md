@@ -1,16 +1,37 @@
-# project2
+# blog_app
 
-A new Flutter project.
+A new Flutter project is a Shopping App..
 
-## Getting Started
+## App Screens:
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+**This is a Splash page**
+<img width="276" alt="This is a Spalsh page" src="/Users/wejdant/Desktop/Project/Project-2/Project-2/assets/Screens_for_Readme/Screen1.png">
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### This is inint screen 
+<img width="276" alt="This is a init page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen2.png">
+
+### This is login screen 
+<img width="276" alt="This is a init page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen3.png">
+
+### HomeScreen
+- In this page you can: view all fruit, and salad. add item to cart list.
+<img width="276" alt="This is a home page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen4.png">
+<img width="276" alt="This is a home page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen5.png">
+
+### Item screen
+
+- In this page you can: view all item details, an add item to cart list.
+<img width="276" alt="This is a item page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen6.png">
+<img width="276" alt="This is a item page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen7.png">
+
+### Cart screen
+
+- In this page you can: view all cart list details, and update the cart(incress the amount or delete item).
+ And you can add copun code to your cart=) "Wejdan".
+ <img width="276" alt="This is a cart page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen8.png">
+<img width="276" alt="This is a cart page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen9.png">
+<img width="276" alt="This is a cart page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen10.png">
+
+### Thanks for scrolling=)
