@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "672508427137",
+    "project_id": "auth-c2404",
+    "storage_bucket": "auth-c2404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672508427137:android:1cec01c6d3f0c3d336c680",
+        "android_client_info": {
+          "package_name": "com.example.shoping_list_manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672508427137-fd50mt18p6nqdv96v9c02q81hlu7hloi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsv88r6oFd1n55SUyD53CspW8k0T61IE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672508427137-fd50mt18p6nqdv96v9c02q81hlu7hloi.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "672508427137-m9iclje78nkaueqlfgjli9e3jfh5gjam.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.shopingListManager"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
