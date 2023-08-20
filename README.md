@@ -1,20 +1,24 @@
 # project_2
 
 # This is the home page where you can view the products available to view a specific product
+![Simulator Screen Shot - iPhone 14 Pro - 2023-08-19 at 01 05 17](https://github.com/36nv/Project-2/assets/72788707/1088dd0e-2404-4fbc-8461-9ec064030841)
 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 01 45](https://github.com/36nv/Project-2/assets/72788707/5b357b2d-4d1e-4e3e-8661-2dc92dee3c0a)
 
 # You can choose a bumpy product
 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 07 13](https://github.com/36nv/Project-2/assets/72788707/2bba045b-4a0a-4137-8309-8c33ef9355ef)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 07 13](https://github.com/36nv/Project-2/assets/72788707/98eba1d1-c9d7-46bb-8069-12b842bddc4b)
+
 
 # By adding to cart Button , you can add the product to the cart
 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 08 45](https://github.com/36nv/Project-2/assets/72788707/75980825-7d16-4c4a-b17e-e39d18762950)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 08 45](https://github.com/36nv/Project-2/assets/72788707/fa289fdd-722b-45b5-bbba-9b6bbb2e5281)
+
 
 # You can search for a product through the search page
 
-![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 09 47](https://github.com/36nv/Project-2/assets/72788707/7ba10142-8edc-45bd-a7ce-01b9f1c15bef)
+![Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17 09 47](https://github.com/36nv/Project-2/assets/72788707/1e238ffa-3682-44f8-8bd1-64f8e5302cd0)
 
-#The google_nav_bar library was used to create an interactive navigation bar
-![Untitled 2](https://github.com/36nv/Project-2/assets/72788707/a41e40dd-8421-4d20-8918-5743ba94d791)
+
+# The google_nav_bar library was used to create an interactive navigation bar
+![Uploading Simulator Screen Shot - iPhone 14 Pro - 2023-08-20 at 17.09.47.png…]()
+
