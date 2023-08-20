@@ -27,7 +27,7 @@ class _ItemsScreenState extends State<ProductsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(text: 'Home'),
+      appBar: CustomAppBar(text: 'Home'),
       body: LiquidPullToRefresh(
         onRefresh: () {
           return Future.delayed(const Duration(milliseconds: 5), () {

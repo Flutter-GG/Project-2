@@ -1,5 +1,6 @@
 # flutter_shopping_app
 
+## there is no default users, you need to create an account
 ![](flutter_shopping_app/readme/1.png)
 ![](flutter_shopping_app/readme/2.png)
 ![](flutter_shopping_app/readme/3.png)

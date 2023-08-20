@@ -57,11 +57,20 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  _submet() {
+  void _submet() {
     final String userName = _userNameController.text;
     final String password = _passwordController.text;
 
-    if (userName == userAuth['userName'] && password == userAuth['password']) {
+    bool isAuthenticated = false;
+
+    for (var userMap in userAuth) {
+      if (userMap['userName'] == userName && userMap['password'] == password) {
+        isAuthenticated = true;
+        break;
+      }
+    }
+
+    if (isAuthenticated) {
       Navigator.push(
         context,
         MaterialPageRoute(

@@ -55,9 +55,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
     final String password = _passwordController.text;
 
     if (userName.isNotEmpty && password.isNotEmpty) {
-      userAuth['userName'] = userName;
-      userAuth['password'] = password;
+      Map<String, dynamic> userMap = {
+        'userName': userName,
+        'password': password,
+      };
+
+      userAuth.add(userMap);
     }
+
     Navigator.pushAndRemoveUntil(
       context,
       MaterialPageRoute(

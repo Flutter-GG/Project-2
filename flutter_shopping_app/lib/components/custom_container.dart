@@ -24,9 +24,11 @@ class CustomContainer extends StatelessWidget {
     this.goToSingleProduct,
     this.editProduct,
     this.addToProfile,
+    this.deleteProductFromCart,
   });
   final Function()? addProduct;
   final Function()? deleteProduct;
+  final Function()? deleteProductFromCart;
   final Function()? goToSingleProduct;
   final Function()? editProduct;
   final Function()? addToProfile;
@@ -58,6 +60,14 @@ class CustomContainer extends StatelessWidget {
                   color: CustomColors.blue,
                 ),
                 onPress: addProduct ?? () {},
+                backgroudColor: Colors.transparent,
+              ),
+              ActionItems(
+                icon: const Icon(
+                  FontAwesomeIcons.cartShopping,
+                  color: CustomColors.red,
+                ),
+                onPress: deleteProductFromCart ?? () {},
                 backgroudColor: Colors.transparent,
               ),
               ActionItems(

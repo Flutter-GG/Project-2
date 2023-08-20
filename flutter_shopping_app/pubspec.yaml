@@ -9,6 +9,7 @@ environment:
 dependencies:
   add_to_cart_animation: ^2.0.3
   awesome_bottom_bar: ^1.2.4
+  badges: ^3.1.1
   flutter:
     sdk: flutter
   flutter_image_slideshow: ^0.1.6

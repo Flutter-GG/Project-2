@@ -26,30 +26,32 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
       itemBuilder: (context, index) {
         var product = widget.products[index];
         return CustomContainer(
-          stock: product.stock,
-          brand: product.brand,
-          category: product.category,
-          thumbnail: product.thumbnail,
-          title: product.title,
-          description: product.description,
-          price: product.price,
-          rating: product.rating,
-          addProduct: () {
-            _addItems(product);
-          },
-          deleteProduct: () {
-            _deleteItems(product);
-          },
-          goToSingleProduct: () {
-            _goToSingleItem(context, product);
-          },
-          editProduct: () {
-            _editProduct(context, product);
-          },
-          addToProfile: () {
-            _addToProfile(product);
-          },
-        );
+            stock: product.stock,
+            brand: product.brand,
+            category: product.category,
+            thumbnail: product.thumbnail,
+            title: product.title,
+            description: product.description,
+            price: product.price,
+            rating: product.rating,
+            addProduct: () {
+              _addItems(product);
+            },
+            deleteProduct: () {
+              _deleteItems(product);
+            },
+            goToSingleProduct: () {
+              _goToSingleItem(context, product);
+            },
+            editProduct: () {
+              _editProduct(context, product);
+            },
+            addToProfile: () {
+              _addToProfile(product);
+            },
+            deleteProductFromCart: () {
+              _deleteItemsFromCart(product);
+            });
       },
     );
   }
@@ -63,6 +65,13 @@ class _CustomProductsInformationState extends State<CustomProductsInformation> {
 
   void _deleteItems(ProductsModel item) {
     products.remove(item);
+    setState(
+      () {},
+    );
+  }
+
+  void _deleteItemsFromCart(ProductsModel item) {
+    cart.remove(item);
     setState(
       () {},
     );
