@@ -4,12 +4,19 @@ import 'package:ghars/constants/spaces.dart';
 import 'package:ghars/screens/main_scaffold.dart';
 import 'package:ghars/utils/extintions.dart';
 import 'package:ghars/widgets/welcome_page_widgets/login_sheet.dart';
+import '../../data_to_be_accessed.dart';
 
-class EntryOptions extends StatelessWidget {
+
+class EntryOptions extends StatefulWidget {
   const EntryOptions({
     super.key,
   });
 
+  @override
+  State<EntryOptions> createState() => _EntryOptionsState();
+}
+
+class _EntryOptionsState extends State<EntryOptions> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -39,6 +46,9 @@ class EntryOptions extends StatelessWidget {
         GSpaces.gV16,
         InkWell(
           onTap: () {
+            isUserAccount = false;
+            clearFileds();
+            setState(() {});
             context.push(screen: const MainScaffold());
           },
           child: const Text(

@@ -1,4 +1,5 @@
 import 'package:ghars/model/user_model.dart';
+import 'package:ghars/widgets/welcome_page_widgets/login_sheet.dart';
 
 List listOfPlants = [];
 List searchResult = [];
@@ -52,12 +53,9 @@ userExist(String email, String password) {
   return false;
 }
 
-/**
-  for (int i =0 ; i < registerdUsers.length ; i++) {
-    if(registerdUsers[i].name == name){
-      if(registerdUsers[i].password == password){
-        
-      }
-    }
-  }
- */
+//Clearing fields finction
+clearFileds() {
+  userEmail.clear();
+  userPassword.clear();
+  msg = "";
+}

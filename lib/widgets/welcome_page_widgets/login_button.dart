@@ -28,10 +28,11 @@ class _LoginButtonState extends State<LoginButton> {
                 cartItemList = registerdUsers[i].shoppingList!;
               }
             }
-            //Maybe deleted
-            userEmail.clear();
-            userPassword.clear();
+            //Clearing fields
+            clearFileds();
             context.push(screen: const MainScaffold());
+            setState(() {});
+            context.findAncestorStateOfType()!.setState(() {});
           } else {
             msg = "Email or Password is wrong";
             setState(() {});

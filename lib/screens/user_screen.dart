@@ -11,8 +11,6 @@ class UserPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       //If user enter the system by Log in choice
-      // child: UserAccount(),
-
       child: isUserAccount!
           ? const UserAccount()
           : const Center(child: GusetWidget()),
