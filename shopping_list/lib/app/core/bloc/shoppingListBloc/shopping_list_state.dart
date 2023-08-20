@@ -30,3 +30,7 @@ class ShoppingListError extends ShoppingListState {
   List<Object> get props => [message];
 }
 
+class ShoppingListItemAdded extends ShoppingListState {
+  @override
+  List<Object> get props => [];
+}

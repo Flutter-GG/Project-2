@@ -3,61 +3,61 @@
     "category": "Fruits",
     "name": "Apples",
     "quantity": "5",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/apple.png"
   },
   {
     "category": "Fruits",
     "name": "Bananas",
     "quantity": "8",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/banana.png"
   },
   {
     "category": "Backery",
     "name": "Bread",
     "quantity": "2",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/bread.png"
   },
 
   {
     "category": "Drinks",
     "name": "Milk",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/milk.png"
   },
   {
     "category": "Drinks",
     "name": "Coca Cola",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/Coca-Cola-Can.png"
   },
   {
     "category": "Drinks",
     "name": "Pepsi",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/pepsi.png"
   },
   {
     "category": "Vegetables",
     "name": "Tomatoes",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/tomato.webp"
   },
   {
     "category": "Vegetables",
     "name": "Broccoli",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/broccoli.png"
   },
   {
     "category": "Proteins",
     "name": "Eggs",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/eggs.png"
   },
   {
     "category": "Proteins",
     "name": "Meat",
     "quantity": "1",
-    "imagePath": "assets/images/groceries.png"
+    "imagePath": "assets/imgs/meat.png"
   }
 ]

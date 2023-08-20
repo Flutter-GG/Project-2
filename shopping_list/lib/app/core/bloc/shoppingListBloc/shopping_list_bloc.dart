@@ -9,8 +9,6 @@ part 'shopping_list_state.dart';
 class ShoppingListBloc extends Bloc<ShoppingListEvent, ShoppingListState> {
   List<ShoppingListItem> items = [];
 
-
-
   ShoppingListBloc() : super(ShoppingListInitial()) {
     // Load items from JSON
     on<LoadShoppingList>((event, emit) async {
@@ -30,15 +28,17 @@ class ShoppingListBloc extends Bloc<ShoppingListEvent, ShoppingListState> {
       }
     });
 
-// Inside your on<AddShoppingListItem> bloc event
     on<AddShoppingListItem>((event, emit) {
-      items.add(event.item);
       print(
-          'Item added: ${event.item.name}. Total items: ${items.length}'); // Debug print
+          'AddShoppingListItem event triggered with item: ${event.item.name}');
+
+      items.add(event.item);
+
+      print('New list of items: $items');
+
       emit(ShoppingListLoaded(List.from(items)));
     });
 
-// Similar for Update and Delete events:
     on<UpdateShoppingListItem>((event, emit) {
       items[event.index] = event.item;
       print(
@@ -52,8 +52,7 @@ class ShoppingListBloc extends Bloc<ShoppingListEvent, ShoppingListState> {
           'Item at index ${event.index} removed. Total items now: ${items.length}'); // Debug print
       emit(ShoppingListLoaded(List.from(items)));
     });
-
-
-
   }
+
+  
 }
