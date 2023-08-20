@@ -1,3 +1,4 @@
+
 # Project #2 - Shopping List App
 
 ## Congratulations!
@@ -51,17 +52,21 @@ awosme dialog
 curve navigation bar
 ----------------------------------
 # SCREENSHOTS OF THE APPLICATION 
+<img width="200" alt="animated" src="https://github.com/reef-mohammad/Project-2/assets/74217487/26a6317a-37f1-4f08-9db3-7da670356049">
+<img width="197" alt="welcome" src="https://github.com/reef-mohammad/Project-2/assets/74217487/d571f3eb-a276-48dd-ba76-5bdd14dca9ee">
 
-![alt text](assets\images\animated.png)
-![alt text](assets\images\cart.png)
-![alt text](assets\images\detailes.png)
-![alt text](assets\images\error.png)
-![alt text](assets\images\homr.png)
-![alt text](assets\images\login.png)
-![alt text](assets\images\quantity.png)
-![alt text](assets\images\search.png)
-![alt text](assets\images\signup.png)
-![alt text](assets\images\slidable.png)
-![alt text](assets\images\update.png)
-![alt text](assets\images\welcome.png)
-![alt text](assets\images\introduction.png)
+<img width="194" alt="signup" src="https://github.com/reef-mohammad/Project-2/assets/74217487/f8031082-8649-450d-acc8-822f48e1d47e">
+<img width="291" alt="login" src="https://github.com/reef-mohammad/Project-2/assets/74217487/abe80e5f-5401-469c-9cf2-6efcd537acb7">
+
+<img width="235" alt="search" src="https://github.com/reef-mohammad/Project-2/assets/74217487/07718fbc-de1e-4552-840c-95ed65f7db39">
+<img width="291" alt="update" src="https://github.com/reef-mohammad/Project-2/assets/74217487/2a0ecb62-e59b-4914-88d4-f8e2b56f8236">
+
+<img width="239" alt="quantity" src="https://github.com/reef-mohammad/Project-2/assets/74217487/9e358327-7402-444c-b473-0773265e7f5e">
+
+<img width="203" alt="detailes" src="https://github.com/reef-mohammad/Project-2/assets/74217487/062e692c-279b-4d20-abb0-0cf856cfb21e">
+<img width="199" alt="error" src="https://github.com/reef-mohammad/Project-2/assets/74217487/1e37b392-d995-4e70-b246-0ab4e37eb03e">
+
+<img width="185" alt="slidable" src="https://github.com/reef-mohammad/Project-2/assets/74217487/d7aa4d4e-b22a-45c2-93b8-20b9880ca933">
+<img width="197" alt="Screenshot 2023-08-20 225231" src="https://github.com/reef-mohammad/Project-2/assets/74217487/7b3ea610-5527-4d2f-895e-ceca561a0153">
+<img width="197" alt="cart" src="https://github.com/reef-mohammad/Project-2/assets/74217487/71132e4a-483c-4adb-9818-1989f26b23e6">
+
