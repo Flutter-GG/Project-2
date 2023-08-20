@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shopping_list/app/utils/constants/colors.dart';
 
 import '../../Models/shopping_list_item_model.dart';
 import '../../core/bloc/shoppingListBloc/shopping_list_bloc.dart';
+import '../../utils/shared/custom_buttons.dart';
 import '../Home/home_view.dart';
 
 class UpdateItemView extends StatefulWidget {
@@ -33,7 +35,11 @@ class _UpdateItemViewState extends State<UpdateItemView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Update Item')),
+      backgroundColor: backgroundColor,
+      appBar: AppBar(
+        backgroundColor: backgroundColor,
+        elevation: 0,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -50,7 +56,8 @@ class _UpdateItemViewState extends State<UpdateItemView> {
               controller: _quantityController,
               decoration: InputDecoration(labelText: 'Quantity'),
             ),
-            ElevatedButton(
+            AuthButton(
+              buttonText: "Update",
               onPressed: () {
                 if (_nameController.text.isNotEmpty &&
                     _categoryController.text.isNotEmpty &&
@@ -69,8 +76,7 @@ class _UpdateItemViewState extends State<UpdateItemView> {
                       MaterialPageRoute(builder: (context) => HomeView()));
                 }
               },
-              child: Text('Update Item'),
-            ),
+            )
           ],
         ),
       ),
