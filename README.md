@@ -15,8 +15,11 @@ Listy is a modern, intuitive grocery shopping list management application design
   
 ## Screenshots 📸
 
+![listy](https://github.com/LemonLabours/Portfolio/assets/101458752/cc75587c-c28b-4db8-a953-70ffb033d810)
 
 ## Demo
+
+https://github.com/LemonLabours/Portfolio/assets/101458752/9e472266-e236-45fa-b753-2e9638d0df24
 
 
 ## Getting Started 🚀
