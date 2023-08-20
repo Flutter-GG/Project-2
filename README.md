@@ -4,7 +4,7 @@
 
 ### Explorer
 
-<img src="read_me_images/explorerView.jpg">
+<img src="read_me_images/explorerView.PNG ">
 
 In this page all the products are displayed and tapping on a product would redirect the user to the product page.
 At the top of the page there would be an indicator of the number of products in the cart, made using badges plugin.
@@ -12,7 +12,7 @@ Also, it has an boomNavigationBar made using curved_navigation_bar plugin.
 
 ### Cart
 
-<img src="read_me_images/cartView.jpg">
+<img src="read_me_images/cartView.PNG ">
 
 In this page all the items inside the user cart would be displayed and the user would be able to:
 
@@ -23,7 +23,7 @@ In this page all the items inside the user cart would be displayed and the user 
 
 ### Product View
 
-<img src="read_me_images/productView.jpg">
+<img src="read_me_images/productView.PNG ">
 
 In this page details about the choosen product is dipalyed.
 shimmer plugin was used on this page on the price.
