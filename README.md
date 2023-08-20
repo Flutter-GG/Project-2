@@ -1,68 +1,45 @@
-# Project #2 - Shopping List App
+## Project Idea
+The idea of ​​this project is to build a shopping store by Flutter FrameWork, display items to the user and the possibility of adding and deleting them by the user, in addition to using libraries.
 
-## Congratulations!
+## What are the libraries that I used?
+1. Provider
+2. turn_page_transition(in initPage)
+3. gradient_animation_text(in initPage)
+4. anim_search_bar(in AppBar)
+5. badges (for cart in AppBar)
+6. coupon_uikit(in cart Page)
+7. flutter_animated_button(in cart Page)
+8. google_font(in cart Page)
+9. flutter_slidable(in cart Page "but is not working")
+10. awesome_dialog(in homePage)
 
-Congratulations on reaching this phase of the course! Over the next few days, you will be working on the second project that will allow you to further apply your knowledge and skills to build another real-world application. This exam project will serve as a demonstration of your proficiency in Global Data Management, focusing on understanding Flutter's architecture, project structure, widgets, global data management, and data manipulation concepts.
+## Demo
 
-## Description
+- init Page using 2 Libararies (turn_page_transition,gradient_animation_text)
 
-Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping lists. Global data management should be used to efficiently store and manage the shopping list items.
+  https://github.com/NouraAljarba/Project-2/assets/108701880/5bb06d4e-c120-4649-a8b5-d67102a83d11
 
-## Rules & Guidelines
+ 
+- add Item using 2 Libararies(awesome_dialog,badges)
 
-1. **Individual Work:** Each student is expected to work individually on their exam. Collaboration is not allowed, and each student should submit their unique work.
-2. **Version Control (Git):**
-   - Create a Fork from the exam’s GitHub repository.
-   - Create a new branch with your name, i.e., Nawaf-Alshawan.
-   - Commit frequently with descriptive messages to show your progress.
-   - Finally, create a Pull Request to the exam’s original repository containing your solution.
-3. **Academic Integrity:** Do not copy or reuse code from previous modules or external sources. The exam is a showcase of your learning progress.
-4. **Learning References:** You may refer to course materials and code examples as learning references, but implement your solutions independently.
-5. **Instructor Support:** The instructor will be available for general questions and guidance throughout the exam.
+  https://github.com/NouraAljarba/Project-2/assets/108701880/8f736d70-561a-4a6d-b18c-118f4f911b56
 
-## Schedule & Deadlines
+    
+- searchBar using library (anim_search_bar)
 
-- **Exam Start Date:** 17/8/2023 - 3:00 PM
-- **Exam Submission Deadline:** 20/8/2023 – 11:59 PM
+  https://github.com/NouraAljarba/Project-2/assets/108701880/266890e3-f01b-4dd7-afc0-2d52dfa8f098
 
-## Minimum Requirements
 
-Your task is to create a Flutter app that demonstrates global data management for a shopping list. The app should allow users to add, view, update, and remove items from their shopping lists. Global data management should be used to efficiently store and manage the shopping list items. Please note the following:
+- cartBage using library(coupon_uikit 'coupun is worked to reduce the total' )
 
-- **Correct Structure:** Ensure that the application is built with the appropriate structure. Follow Flutter's best practices for organizing code and project files.
-- **Clean Code:** Write code that is clear, well-organized, and scalable. Use meaningful variable and function names and follow standard coding conventions to improve code readability.
-- **Applying Concepts:** Make proper use of programming concepts and techniques. Implement efficient algorithms and follow Flutter's design patterns to create a robust and functional shopping list app.
-- **Global Variable Management:** Implement global variable management techniques to efficiently store and manage the shopping list items. Create a global List variable that holds the shopping list items, and use this variable to maintain the state of the items throughout the app.
-- **Data Representation:** Treat shopping list items as objects using a model. Create a model class to define the structure of a shopping list item, including attributes like name, quantity, etc.
-- **User Interactions:** Users should be able to perform the following actions:
-  - Add: Add new items to their shopping list along with relevant details like name, quantity, etc.
-  - View: Display the list of items in the shopping list with their details.
-  - Update: Allow users to modify the details of any item in the shopping list.
-  - Remove: Enable users to delete items from the shopping list.
-- **Utilizing Packages:** It is required that you use at least eight packages from *pub.dev*.
+  https://github.com/NouraAljarba/Project-2/assets/108701880/e8c64854-457e-4635-a5f2-5e8f4d36cbc5
 
-## Ideas for Extra Credit
 
-1. **User Authentication:** Implement a user registration and login system to allow multiple users to have their own personalized shopping lists.
-2. **Categories and Sorting:** Add support for categorizing shopping list items. Users can assign items to different categories such as groceries, household items, or personal care. Implement sorting options based on categories, alphabetical order, or user-defined priorities!
-3. **Coupons and Deals:** Integrate with coupon and deal APIs to provide users with relevant discounts and offers for the items on their shopping list. Users can save money by taking advantage of available deals.
+- Delete Item
 
-## Delivery Requirements
+  https://github.com/NouraAljarba/Project-2/assets/108701880/97b2ae47-a220-4bd7-89e1-6e6b918a4e87
 
-- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
-- **Readme File:**
-  - Create a README.md file in the root directory of your GitHub repository.
-  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
-    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
-    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
-    - **Features:** List all the features and functionalities of the app. Mention the core capabilities of the app, such as adding items to the shopping list, updating items, deleting items, etc.
-    - **Technologies Used:** Mention the technologies and libraries utilized in the development of the app. This could include mentioning Flutter, specific plugins used, or any other relevant technologies.
-    - **Code Explanation:** Optionally, provide explanations or documentation for the key parts of the code if necessary. This could be particularly helpful for complex algorithms or unique implementations.
 
-## Resources
+- AnimatedButton & googleFont Libraries in cartPage
 
-- [Dart Tutorials](https://dart.dev/tutorials)
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Flutter Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/flutter-tutorial/)
-
-Good luck with your exam project! If you have any general questions or need guidance, don't hesitate to reach out to the instructor. Happy coding!
+  https://github.com/NouraAljarba/Project-2/assets/108701880/4d4b3d73-58bf-48bf-a445-ab08db2c87a6
