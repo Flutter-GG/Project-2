@@ -41,9 +41,11 @@ class _LogInViewState extends State<LogInView> {
                       password: passwordController.text,
                     )
                         .then((value) {
-                      print("Logged in!");
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => HomeView()));
+                      Navigator.pushAndRemoveUntil(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomeView()),
+                        (route) => false,
+                      );
                     }).catchError((error) {
                       // Handle login error
                       print("Error: ${error.toString()}");

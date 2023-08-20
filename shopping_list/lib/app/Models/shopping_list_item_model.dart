@@ -1,4 +1,6 @@
-class ShoppingListItem {
+import 'package:equatable/equatable.dart';
+
+class ShoppingListItem extends Equatable {
   final String category;
   final String name;
   final String quantity;
@@ -10,6 +12,9 @@ class ShoppingListItem {
     required this.quantity,
     required this.imagePath,
   });
+  
+ @override
+  List<Object> get props => [name, category, quantity, imagePath];
 
   factory ShoppingListItem.fromJson(Map<String, dynamic> json) {
     return ShoppingListItem(

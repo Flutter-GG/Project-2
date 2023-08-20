@@ -29,3 +29,4 @@ class ShoppingListError extends ShoppingListState {
   @override
   List<Object> get props => [message];
 }
+

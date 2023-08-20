@@ -1,10 +1,79 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
-class UpdateItemView extends StatelessWidget {
-  const UpdateItemView({super.key});
+import '../../Models/shopping_list_item_model.dart';
+import '../../core/bloc/shoppingListBloc/shopping_list_bloc.dart';
+import '../Home/home_view.dart';
+
+class UpdateItemView extends StatefulWidget {
+  final ShoppingListItem item;
+  final int index;
+
+  const UpdateItemView({Key? key, required this.item, required this.index})
+      : super(key: key);
+
+  @override
+  _UpdateItemViewState createState() => _UpdateItemViewState();
+}
+
+class _UpdateItemViewState extends State<UpdateItemView> {
+  late TextEditingController _nameController;
+  late TextEditingController _categoryController;
+  late TextEditingController _quantityController;
+
+  @override
+  void initState() {
+    super.initState();
+    _nameController = TextEditingController(text: widget.item.name);
+    _categoryController = TextEditingController(text: widget.item.category);
+    _quantityController =
+        TextEditingController(text: widget.item.quantity.toString());
+  }
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: Text('Update Item')),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: _nameController,
+              decoration: InputDecoration(labelText: 'Item Name'),
+            ),
+            TextField(
+              controller: _categoryController,
+              decoration: InputDecoration(labelText: 'Category'),
+            ),
+            TextField(
+              controller: _quantityController,
+              decoration: InputDecoration(labelText: 'Quantity'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                if (_nameController.text.isNotEmpty &&
+                    _categoryController.text.isNotEmpty &&
+                    _quantityController.text.isNotEmpty) {
+                  BlocProvider.of<ShoppingListBloc>(context).add(
+                    UpdateShoppingListItem(
+                        widget.index,
+                        ShoppingListItem(
+                          name: _nameController.text,
+                          category: _categoryController.text,
+                          quantity: _quantityController.text,
+                          imagePath: '',
+                        )),
+                  );
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => HomeView()));
+                }
+              },
+              child: Text('Update Item'),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
