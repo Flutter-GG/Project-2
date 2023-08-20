@@ -1,4 +1,4 @@
-# blog_app
+# Shopping App
 
 A new Flutter project is a Shopping App..
 
