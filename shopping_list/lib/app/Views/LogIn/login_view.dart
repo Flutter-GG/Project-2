@@ -1,13 +1,22 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import '../../utils/constants/colors.dart';
 import '../../utils/shared/custom_buttons.dart';
 import '../../utils/shared/custom_text.dart';
 import '../../utils/shared/fixed_sheet.dart';
+import '../Home/home_view.dart';
 import 'widgets/login_form.dart';
 
-class LogInView extends StatelessWidget {
+class LogInView extends StatefulWidget {
   const LogInView({Key? key}) : super(key: key);
+
+  @override
+  _LogInViewState createState() => _LogInViewState();
+}
+
+class _LogInViewState extends State<LogInView> {
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +28,26 @@ class LogInView extends StatelessWidget {
             child: Column(
               children: [
                 const FormTitle(text: 'Log In'),
-                const LogInForm(),
+                LogInForm(
+                  emailController: emailController,
+                  passwordController: passwordController,
+                ),
                 AuthButton(
                   buttonText: 'Log In',
                   onPressed: () {
-                    print('Log In');
+                    FirebaseAuth.instance
+                        .signInWithEmailAndPassword(
+                      email: emailController.text,
+                      password: passwordController.text,
+                    )
+                        .then((value) {
+                      print("Logged in!");
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => HomeView()));
+                    }).catchError((error) {
+                      // Handle login error
+                      print("Error: ${error.toString()}");
+                    });
                   },
                 )
               ],

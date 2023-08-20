@@ -43,8 +43,11 @@ class _SignUpViewState extends State<SignUpView> {
                       password: passwordController.text,
                     )
                         .then((value) {
+                      print("Created New Account!");
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => HomeView()));
+                    }).onError((error, stackTrace) {
+                      print('Error: ${error.toString()}');
                     });
                   },
                 )
