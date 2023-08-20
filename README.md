@@ -7,7 +7,7 @@ A new Flutter project is a Shopping App..
 
 
 **This is a Splash page**
-<img width="276" alt="This is a Spalsh page" src="/Users/wejdant/Desktop/Project/Project-2/Project-2/assets/Screens_for_Readme/Screen1.png">
+<img width="276" alt="This is a Spalsh page" src="../assets/Screens_for_Readme/Screen1.png">
 
 ### This is inint screen 
 <img width="276" alt="This is a init page" src="/Users/wejdant/Desktop/Labs/project2/assets/Screens_for_Readme/Screen2.png">
