@@ -1,0 +1,39 @@
+name: flower_store
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.6 <4.0.0'
+
+dependencies:
+  anim_search_bar: ^2.0.3
+  animation_search_bar: ^0.0.10
+  awesome_dialog: ^3.1.0
+  badges: ^3.1.1
+  bilions_ui: ^1.0.19
+  button_animations: ^2.0.0+3
+  counter_button: ^1.0.1
+  coupon_uikit: ^0.2.0
+  filter_list: ^1.0.2
+  flutter:
+    sdk: flutter
+  flutter_animated_button: ^2.0.3
+  flutter_gradient_animation_text: ^1.0.2
+  flutter_slidable: ^3.0.0
+  google_fonts: ^5.1.0
+  page_transition: ^2.0.9
+  provider: ^6.0.5
+  turn_page_transition: ^0.3.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/image/
+
