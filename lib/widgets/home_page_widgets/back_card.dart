@@ -4,7 +4,7 @@ import 'package:ghars/model/plants_model.dart';
 import 'package:ghars/widgets/card_widgets/cart_button.dart';
 import 'package:ghars/widgets/card_widgets/number_of_item_row.dart';
 import 'package:shimmer/shimmer.dart';
-
+import 'package:url_launcher/link.dart';
 
 class BackCrd extends StatefulWidget {
   const BackCrd({super.key, required this.plants});
@@ -78,6 +78,25 @@ class _BackCrdState extends State<BackCrd> {
                     ),
                   ),
                 ],
+              ),
+            ),
+          ),
+          Positioned(
+            right: 110,
+            bottom: 20,
+            child: Link(
+              target: LinkTarget.self,
+              uri: Uri.parse(widget.plants.infoUrl!),
+              builder: (context, followLink) => ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: GColors.white,
+                  shape: const StadiumBorder(),
+                ),
+                onPressed: followLink,
+                child: const Text(
+                  "More info",
+                  style: TextStyle(color: GColors.black),
+                ),
               ),
             ),
           ),

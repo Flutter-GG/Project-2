@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ghars/constants/colors.dart';
 import 'package:ghars/data_to_be_accessed.dart';
+import 'package:ghars/screens/home_page.dart';
 
 class PlantTypeButtons extends StatefulWidget {
   const PlantTypeButtons({
@@ -21,7 +22,7 @@ class _PlantTypeButtonsState extends State<PlantTypeButtons> {
           onPressed: () {
             isIndoor = !isIndoor;
             setState(() {});
-            // context.findAncestorStateOfType<CartPageState>()!.setState(() {});
+            context.findAncestorStateOfType<HomePageState>()!.setState(() {});
           },
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(
@@ -43,7 +44,10 @@ class _PlantTypeButtonsState extends State<PlantTypeButtons> {
           onPressed: () {
             isOutdoor = !isOutdoor;
             setState(() {});
-            // context.findAncestorStateOfType<CartPageState>()!.setState(() {});
+            // context
+            //     .findAncestorStateOfType<MainScaffoldState>()!
+            //     .setState(() {});
+            context.findAncestorStateOfType<HomePageState>()!.setState(() {});
           },
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(

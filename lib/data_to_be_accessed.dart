@@ -7,9 +7,6 @@ List cartItemList = [];
 List indoorPlants = [];
 List outdoorPlants = [];
 
-bool isIndoor = false;
-bool isOutdoor = false;
-
 //Users cart
 List mjdCart = [];
 List nasserCart = [];
@@ -29,12 +26,15 @@ List<User> registerdUsers = [
   )
 ];
 
-String? userNmae; //for checking the user name match enterd one
+bool isIndoor = false;
+bool isOutdoor = false;
+String? userNmae; //for checking the user name if match the enterd one
 String? userEmailText;
 bool? isUserAccount = false; //For returning info on cart page and user page
 
 userExist(String email, String password) {
   if (email.isEmpty || password.isEmpty) {
+    cartItemList.clear(); //Clearing the main cart
     isUserAccount = false;
     return false;
   } else {
@@ -43,6 +43,8 @@ userExist(String email, String password) {
         if (element.password == password) {
           userNmae = element.name;
           userEmailText = element.email;
+          cartItemList =
+              element.shoppingList!; //Cart list will containe user cart list
           isUserAccount = true;
           return true;
         }
@@ -53,7 +55,7 @@ userExist(String email, String password) {
   return false;
 }
 
-//Clearing fields finction
+//Clearing fields function
 clearFileds() {
   userEmail.clear();
   userPassword.clear();

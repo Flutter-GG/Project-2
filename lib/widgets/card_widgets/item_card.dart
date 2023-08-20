@@ -15,10 +15,10 @@ class ItemCard extends StatefulWidget {
   final Plants plants;
 
   @override
-  State<ItemCard> createState() => ItemCardState();
+  State<ItemCard> createState() => _ItemCardState();
 }
 
-class ItemCardState extends State<ItemCard> {
+class _ItemCardState extends State<ItemCard> {
   @override
   Widget build(BuildContext context) {
     return Center(

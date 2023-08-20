@@ -7,16 +7,17 @@ import '../functions/search_func.dart';
 import '../model/plants_model.dart';
 import '../widgets/card_widgets/flip_card.dart';
 
-// ignore: must_be_immutable
+//This is the home page screen, which is containe the plants cards and a brief about the app
+
 class HomePage extends StatefulWidget {
   const HomePage({super.key, this.plants});
   final Plants? plants;
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<HomePage> createState() => HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -26,11 +27,12 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: [
             GSpaces.gV24,
-            const SearchField(),
+            const SearchField(), //Search field widget
             GSpaces.gV16,
             const PlantTypeButtons(), //Plants filtering buttons widget
             GSpaces.gV8,
             Expanded(
+              //The list of cards "Plants card"
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: displayedList().length,
@@ -45,7 +47,7 @@ class _HomePageState extends State<HomePage> {
             ),
             const Padding(
               padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-              child: AboutGharsSection(), //About Ghars app "Text widget"
+              child: AboutGharsSection(), //A brife about Ghars app widget
             ),
           ],
         ),
@@ -53,5 +55,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-
-

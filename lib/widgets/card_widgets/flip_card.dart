@@ -12,10 +12,10 @@ class FlipedCard extends StatefulWidget {
   final int index;
 
   @override
-  State<FlipedCard> createState() => _FlipedCardState();
+  State<FlipedCard> createState() => FlipedCardState();
 }
 
-class _FlipedCardState extends State<FlipedCard> {
+class FlipedCardState extends State<FlipedCard> {
   @override
   Widget build(BuildContext context) {
     return FlipCard(

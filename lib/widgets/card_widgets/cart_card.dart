@@ -14,10 +14,10 @@ class CartItemCard extends StatefulWidget {
   final Plants plants;
 
   @override
-  State<CartItemCard> createState() => _CartItemCardState();
+  State<CartItemCard> createState() => CartItemCardState();
 }
 
-class _CartItemCardState extends State<CartItemCard> {
+class CartItemCardState extends State<CartItemCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -89,6 +89,9 @@ class _CartItemCardState extends State<CartItemCard> {
                       onPressed: () {
                         decreaseQuantity(widget.plants);
                         setState(() {});
+                        context
+                            .findAncestorStateOfType<CartPageState>()
+                            ?.setState(() {});
                       },
                       icon: const Icon(Icons.remove)),
                   Text(
@@ -99,6 +102,9 @@ class _CartItemCardState extends State<CartItemCard> {
                       onPressed: () {
                         increaseQuantity(widget.plants);
                         setState(() {});
+                        context
+                            .findAncestorStateOfType<CartPageState>()
+                            ?.setState(() {});
                       },
                       icon: const Icon(Icons.add)),
                 ],
