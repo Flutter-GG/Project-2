@@ -43,7 +43,7 @@ This application offer different kinds of plants to sale. 🪴
   <br>![add](https://github.com/Mjd-Gh/Project-2/assets/101333803/63196871-4ed7-45f7-b063-1ec735f6d7e8) ![update   dicount](https://github.com/Mjd-Gh/Project-2/assets/101333803/e465b15a-d5a1-4a41-a608-27972e069893) ![delete](https://github.com/Mjd-Gh/Project-2/assets/101333803/0e872eb8-e715-4e20-b898-c1113bbb7323) <br>
 
 
-##Log in info:
+## Log in info:
 You can logged in by using the following info:
 - Email : mjd@gmail.com or nasser@gmail.com
 - Password: 123 for mjd account, or 321 for nasser account
