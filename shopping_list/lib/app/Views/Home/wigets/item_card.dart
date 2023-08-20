@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../core/bloc/cartListBloc/bloc/cart_list_bloc_bloc.dart';
 import '../../../utils/constants/colors.dart';
 import '../../Update/update_view.dart';
-import '../../../Models/shopping_list_item_model.dart'; // Ensure you import the model
+import '../../../Models/shopping_list_item_model.dart'; 
 
 class ShoppingItemCard extends StatelessWidget {
   final ShoppingListItem item;

@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
         splash: Image.asset('assets/imgs/textLogo.png'),
         splashIconSize: 100.0,
         nextScreen:
-            const IntroView(), // Ensure that IntroView is the actual widget that needs access to the bloc
+            const IntroView(), 
         splashTransition: SplashTransition.slideTransition,
         pageTransitionType: PageTransitionType.rightToLeftWithFade,
         backgroundColor: backgroundColor,

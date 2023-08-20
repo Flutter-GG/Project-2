@@ -8,9 +8,7 @@ class HomeMainView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<ShoppingListBloc, ShoppingListState>(
-      listener: (context, state) {
-        // No need to listen to ShoppingListItemAdded anymore
-      },
+      listener: (context, state) {},
       builder: (context, state) {
         if (state is ShoppingListLoading) {
           return Center(child: CircularProgressIndicator());

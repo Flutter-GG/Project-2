@@ -11,14 +11,15 @@ class IntroView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        backgroundColor: purpleColor,
-        body: Stack(
-          children: [
-            IntroTitle(),
-            LogoImage(),
-            IntroButtons(),
-            IntroIcon(),
-          ],
-        ));
+      backgroundColor: purpleColor,
+      body: Stack(
+        children: [
+          IntroTitle(),
+          LogoImage(),
+          IntroButtons(),
+          IntroIcon(),
+        ],
+      ),
+    );
   }
 }
