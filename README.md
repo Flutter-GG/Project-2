@@ -33,7 +33,7 @@
         <th>Sort products based on name and price</th>
     </tr>
     <tr>
-        <td><img src="https://github.com/Alawashez2/Project-2/assets/94991478/d6306daa-3a5a-4518-9c7b-63ec65dc9a36" width=300/></td>
+        <td><img src="https://github.com/Alawashez2/Project-2/assets/94991478/ebea1a41-ccd0-4e06-9d99-c9802a6677fd" width=300/></td>
     </tr>
 
 </Table>
