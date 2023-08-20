@@ -49,12 +49,14 @@ class AddItemForm extends StatelessWidget {
                 categoryController.text.isNotEmpty &&
                 quantityController.text.isNotEmpty) {
               BlocProvider.of<ShoppingListBloc>(context).add(
-                AddShoppingListItem(ShoppingListItem(
-                  name: nameController.text,
-                  category: categoryController.text,
-                  quantity: quantityController.text,
-                  imagePath: '',
-                )),
+                AddShoppingListItem(
+                  ShoppingListItem(
+                    name: nameController.text,
+                    category: categoryController.text,
+                    quantity: quantityController.text,
+                    imagePath: '',
+                  ),
+                ),
               );
               Navigator.of(context).pop();
             }

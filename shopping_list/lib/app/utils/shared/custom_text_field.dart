@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../constants/colors.dart';
 
 class CustomTextField extends StatelessWidget {
@@ -32,7 +31,7 @@ class CustomTextField extends StatelessWidget {
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
               borderSide:
-                  const BorderSide(color: textColor), // Set border color
+                  const BorderSide(color: textColor), 
             ),
             contentPadding: const EdgeInsets.symmetric(
               vertical: 16,

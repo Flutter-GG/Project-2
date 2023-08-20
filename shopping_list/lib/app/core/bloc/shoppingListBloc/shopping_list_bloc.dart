@@ -42,14 +42,14 @@ class ShoppingListBloc extends Bloc<ShoppingListEvent, ShoppingListState> {
     on<UpdateShoppingListItem>((event, emit) {
       items[event.index] = event.item;
       print(
-          'Item at index ${event.index} updated to: ${event.item.name}. Total items: ${items.length}'); // Debug print
+          'Item at index ${event.index} updated to: ${event.item.name}. Total items: ${items.length}'); 
       emit(ShoppingListLoaded(List.from(items)));
     });
 
     on<DeleteShoppingListItem>((event, emit) {
       items.removeAt(event.index);
       print(
-          'Item at index ${event.index} removed. Total items now: ${items.length}'); // Debug print
+          'Item at index ${event.index} removed. Total items now: ${items.length}'); 
       emit(ShoppingListLoaded(List.from(items)));
     });
   }

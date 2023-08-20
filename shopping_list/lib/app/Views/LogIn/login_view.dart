@@ -47,7 +47,6 @@ class _LogInViewState extends State<LogInView> {
                         (route) => false,
                       );
                     }).catchError((error) {
-                      // Handle login error
                       print("Error: ${error.toString()}");
                     });
                   },

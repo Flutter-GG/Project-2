@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/utils/shared/spacing.dart';
-
 import 'custom_text.dart';
 
 class CustomIntroButton extends StatelessWidget {
@@ -25,7 +24,7 @@ class CustomIntroButton extends StatelessWidget {
       },
       style: ButtonStyle(
         backgroundColor:
-            MaterialStateProperty.all<Color>(Colors.red), // Set button color
+            MaterialStateProperty.all<Color>(Colors.red), 
         overlayColor: MaterialStateProperty.resolveWith<Color?>(
           (Set<MaterialState> states) {
             if (states.contains(MaterialState.hovered)) {
@@ -73,7 +72,7 @@ class AuthButton extends StatelessWidget {
           onPressed: onPressed,
           style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all<Color>(
-              Colors.red, // Set button color
+              Colors.red, 
             ),
             overlayColor: MaterialStateProperty.resolveWith<Color?>(
               (Set<MaterialState> states) {

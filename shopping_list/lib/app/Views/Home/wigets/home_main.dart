@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../core/bloc/shoppingListBloc/shopping_list_bloc.dart';
 import '../../../utils/constants/colors.dart';
 import 'item_card.dart';
@@ -21,10 +20,11 @@ class HomeMainView extends StatelessWidget {
           }
           if (state.items.isEmpty) {
             return Center(
-                child: Text(
-              'No items in the shopping list.',
-              style: TextStyle(color: textColor),
-            ));
+              child: Text(
+                'No items in the shopping list.',
+                style: TextStyle(color: textColor),
+              ),
+            );
           }
           return ListView.builder(
             itemCount: state.items.length,
@@ -34,16 +34,18 @@ class HomeMainView extends StatelessWidget {
           );
         } else if (state is ShoppingListError) {
           return Center(
-              child: Text(
-            state.message,
-            style: TextStyle(color: textColor),
-          ));
+            child: Text(
+              state.message,
+              style: TextStyle(color: textColor),
+            ),
+          );
         }
         return Center(
-            child: Text(
-          'Start by loading the shopping list.',
-          style: TextStyle(color: textColor),
-        ));
+          child: Text(
+            'Start by loading the shopping list.',
+            style: TextStyle(color: textColor),
+          ),
+        );
       },
     );
   }

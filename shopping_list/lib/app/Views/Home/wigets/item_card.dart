@@ -28,14 +28,14 @@ class ShoppingItemCard extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              width: 180, // This will cover the full width of the card
+              width: 180, 
               height: 150.0,
 
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(10.0),
                 child: Image.asset(
                   displayImagePath,
-                  fit: BoxFit.fill, // This will fill the container's dimensions
+                  fit: BoxFit.fill, 
                 ),
               ),
             ),
@@ -72,12 +72,12 @@ class ShoppingItemCard extends StatelessWidget {
                 Text(
                   'Category: ${item.category}',
                   style: TextStyle(
-                      color: textColor, fontSize: 16.0), // Adjusted font size
+                      color: textColor, fontSize: 16.0), 
                 ),
                 Text(
                   'Quantity: ${item.quantity}',
                   style: TextStyle(
-                      color: textColor, fontSize: 16.0), // Adjusted font size
+                      color: textColor, fontSize: 16.0), 
                 ),
                 IconButton(
                   icon: Icon(Icons.add_shopping_cart, color: purpleColor),

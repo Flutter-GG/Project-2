@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-
 part 'cart_list_bloc_event.dart';
 part 'cart_list_bloc_state.dart';
 

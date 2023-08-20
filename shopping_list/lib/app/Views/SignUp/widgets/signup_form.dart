@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/utils/shared/spacing.dart';
-
 import '../../../utils/shared/custom_text_field.dart';
 
 class SignUpForm extends StatelessWidget {

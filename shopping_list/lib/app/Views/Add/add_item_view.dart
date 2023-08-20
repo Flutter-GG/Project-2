@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/utils/constants/colors.dart';
-
 import 'widgets/add_item_form.dart';
 
 class AddItemBottomSheet extends StatefulWidget {

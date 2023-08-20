@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/Views/SignUp/signup_view.dart';
-
 import '../../../utils/shared/custom_buttons.dart';
 import '../../../utils/shared/spacing.dart';
 import '../../LogIn/login_view.dart';

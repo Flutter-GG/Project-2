@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/app/utils/shared/custom_text.dart';
-
 import '../../../utils/constants/strings.dart';
 import '../../../utils/shared/spacing.dart';
 

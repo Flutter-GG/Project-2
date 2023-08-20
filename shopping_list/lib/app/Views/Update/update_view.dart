@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shopping_list/app/utils/constants/colors.dart';
-
 import '../../Models/shopping_list_item_model.dart';
 import '../../core/bloc/shoppingListBloc/shopping_list_bloc.dart';
 import '../../utils/shared/custom_buttons.dart';
@@ -64,13 +63,14 @@ class _UpdateItemViewState extends State<UpdateItemView> {
                     _quantityController.text.isNotEmpty) {
                   BlocProvider.of<ShoppingListBloc>(context).add(
                     UpdateShoppingListItem(
-                        widget.index,
-                        ShoppingListItem(
-                          name: _nameController.text,
-                          category: _categoryController.text,
-                          quantity: _quantityController.text,
-                          imagePath: '',
-                        )),
+                      widget.index,
+                      ShoppingListItem(
+                        name: _nameController.text,
+                        category: _categoryController.text,
+                        quantity: _quantityController.text,
+                        imagePath: '',
+                      ),
+                    ),
                   );
                   Navigator.pushReplacement(context,
                       MaterialPageRoute(builder: (context) => HomeView()));
