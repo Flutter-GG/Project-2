@@ -1,0 +1,29 @@
+name: shopping_list_app
+description: A new Flutter project.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.6 <4.0.0"
+
+dependencies:
+  animated_text_kit: ^4.2.2
+  awesome_dialog: ^3.1.0
+  badges: ^3.1.1
+  convex_bottom_bar: ^3.2.0
+  coupon_uikit: ^0.2.0
+  flutter:
+    sdk: flutter
+  flutter_animate: ^4.2.0+1
+  flutter_slidable: ^3.0.0
+  introduction_screen: ^3.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
