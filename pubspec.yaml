@@ -1,0 +1,31 @@
+name: project_2
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  animated_text_kit: ^4.2.2
+  awesome_dialog: ^3.1.0
+  curved_navigation_bar: ^1.0.3
+  equatable: ^2.0.5
+  flutter:
+    sdk: flutter
+  flutter_slidable: ^3.0.0
+  intro_slider: ^4.2.0
+  liquid_pull_to_refresh: ^3.0.1
+  provider: ^6.0.5
+  shimmer: ^3.0.0
+  zoom_tap_animation: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/

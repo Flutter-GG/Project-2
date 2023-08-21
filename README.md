@@ -1,3 +1,4 @@
+
 # Project #2 - Shopping List App
 
 ## Congratulations!
@@ -39,30 +40,33 @@ Your task is to create a Flutter app that demonstrates global data management fo
   - View: Display the list of items in the shopping list with their details.
   - Update: Allow users to modify the details of any item in the shopping list.
   - Remove: Enable users to delete items from the shopping list.
-- **Utilizing Packages:** It is required that you use at least eight packages from *pub.dev*.
+- **Utilizing Packages:** It is required that you use at least eight packages from _pub.dev_.
 
-## Ideas for Extra Credit
+Packages:
+shimmer
+intro
+animated_text_kit
+refresh
+zoom in
+awosme dialog
+curve navigation bar
+----------------------------------
+# SCREENSHOTS OF THE APPLICATION 
+<img width="200" alt="animated" src="https://github.com/reef-mohammad/Project-2/assets/74217487/26a6317a-37f1-4f08-9db3-7da670356049">
+<img width="197" alt="welcome" src="https://github.com/reef-mohammad/Project-2/assets/74217487/d571f3eb-a276-48dd-ba76-5bdd14dca9ee">
 
-1. **User Authentication:** Implement a user registration and login system to allow multiple users to have their own personalized shopping lists.
-2. **Categories and Sorting:** Add support for categorizing shopping list items. Users can assign items to different categories such as groceries, household items, or personal care. Implement sorting options based on categories, alphabetical order, or user-defined priorities!
-3. **Coupons and Deals:** Integrate with coupon and deal APIs to provide users with relevant discounts and offers for the items on their shopping list. Users can save money by taking advantage of available deals.
+<img width="194" alt="signup" src="https://github.com/reef-mohammad/Project-2/assets/74217487/f8031082-8649-450d-acc8-822f48e1d47e">
+<img width="291" alt="login" src="https://github.com/reef-mohammad/Project-2/assets/74217487/abe80e5f-5401-469c-9cf2-6efcd537acb7">
 
-## Delivery Requirements
+<img width="235" alt="search" src="https://github.com/reef-mohammad/Project-2/assets/74217487/07718fbc-de1e-4552-840c-95ed65f7db39">
+<img width="291" alt="update" src="https://github.com/reef-mohammad/Project-2/assets/74217487/2a0ecb62-e59b-4914-88d4-f8e2b56f8236">
 
-- **Upload the Entire Project:** Ensure that you upload the complete project, which includes all necessary code files, assets, and configurations, to the repository on GitHub.
-- **Readme File:**
-  - Create a README.md file in the root directory of your GitHub repository.
-  - Provide a detailed and well-structured description of the project in the README file, including the following sections:
-    - **Project Overview:** Briefly describe what the shopping list app is about and its main features. Give readers a clear idea of the purpose and functionality of the app.
-    - **Screenshots:** Include relevant screenshots of the app to showcase its appearance and functionalities. Visuals can help users understand the app's design and layout.
-    - **Features:** List all the features and functionalities of the app. Mention the core capabilities of the app, such as adding items to the shopping list, updating items, deleting items, etc.
-    - **Technologies Used:** Mention the technologies and libraries utilized in the development of the app. This could include mentioning Flutter, specific plugins used, or any other relevant technologies.
-    - **Code Explanation:** Optionally, provide explanations or documentation for the key parts of the code if necessary. This could be particularly helpful for complex algorithms or unique implementations.
+<img width="239" alt="quantity" src="https://github.com/reef-mohammad/Project-2/assets/74217487/9e358327-7402-444c-b473-0773265e7f5e">
 
-## Resources
+<img width="203" alt="detailes" src="https://github.com/reef-mohammad/Project-2/assets/74217487/062e692c-279b-4d20-abb0-0cf856cfb21e">
+<img width="199" alt="error" src="https://github.com/reef-mohammad/Project-2/assets/74217487/1e37b392-d995-4e70-b246-0ab4e37eb03e">
 
-- [Dart Tutorials](https://dart.dev/tutorials)
-- [Flutter Documentation](https://docs.flutter.dev/)
-- [Flutter Tutorial by GeeksforGeeks](https://www.geeksforgeeks.org/flutter-tutorial/)
+<img width="185" alt="slidable" src="https://github.com/reef-mohammad/Project-2/assets/74217487/d7aa4d4e-b22a-45c2-93b8-20b9880ca933">
+<img width="197" alt="Screenshot 2023-08-20 225231" src="https://github.com/reef-mohammad/Project-2/assets/74217487/7b3ea610-5527-4d2f-895e-ceca561a0153">
+<img width="197" alt="cart" src="https://github.com/reef-mohammad/Project-2/assets/74217487/71132e4a-483c-4adb-9818-1989f26b23e6">
 
-Good luck with your exam project! If you have any general questions or need guidance, don't hesitate to reach out to the instructor. Happy coding!
